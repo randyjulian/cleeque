@@ -1,11 +1,12 @@
 <?php
 session_start();
 $usernameSession=$_SESSION['username'];
-   $servername = "localhost";
-   $username = "root";
-   $password = "";
-   $dbname = "orbital";
-      
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+
    $location = null;
    $error = false;
    try {
