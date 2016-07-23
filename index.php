@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Homepage</title>
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
 <!--<form action="upload.php" method="post" enctype="multipart/form-data">
