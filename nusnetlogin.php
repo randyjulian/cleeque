@@ -20,10 +20,11 @@
 			$_SESSION['fullName'] = $fullName;
 			$_SESSION['email']=$email;
 
-			if(checkingUsernameExistInUserid($username)){
+			/* if(checkingUsernameExistInUserid($username)){
 			$sql = "INSERT INTO userid(username, password, email, name)VALUES ('$username', 'NUSNET','$email', '$fullName')";
     		$database->exec($sql);
-    		echo "Yeah";}
+    		echo "Yeah";}*/
+    	
     		echo "Boo";
 			header('Location:https://cleeque.herokuapp.com/dashboard.php');
 		} else {
