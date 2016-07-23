@@ -10,11 +10,10 @@ $name= $_POST['name'];
 $userpassword = password_hash($_POST['password'], PASSWORD_DEFAULT);  
 $email = $_POST['email'];
 
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$server = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$db = substr($url["path"], 1);
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "orbital";
 		
 // var for identifying empty form		
 $location = null;
@@ -38,16 +37,16 @@ else {
 
 // writing into the database
 try {
-    $database = new PDO("mysql:host=$server;dbname=$db", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // set the PDO error mode to exception
-    $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // sql to insert data
     $sql = "INSERT INTO userid(username, password, email)
     VALUES ('$name','$userpassword','$email')";
 
     // use exec() because no results are returned
-    $database->exec($sql);
+    $conn->exec($sql);
     echo "<script> 
     alert('You have been registered successfully!');
     window.location.href='login.php';
@@ -65,7 +64,7 @@ catch(PDOException $e)
     
     }
 }
-$database = null;
+$conn = null;
 
 
   ?>

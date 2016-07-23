@@ -1,13 +1,13 @@
 <?php
 	require_once 'LightOpenID-master/openid.php';
-	$openid= new LightOpenID("https://cleeque.herokuapp.com/nusnet.php");
+	$openid= new LightOpenID("localhost/Orbitals_Local_Server/nusnet.php");
 
 	$openid->identity = 'https://openid.nus.edu.sg/';
 	$openid->required = array(
 		'contact/email',
 		'namePerson/friendly',
 		'namePerson');
-	$openid->returnUrl = 'https://cleeque.herokuapp.com/nusnetlogin.php';
+	$openid->returnUrl = 'http://localhost/Orbitals_Local_Server/nusnetlogin.php';
 
 ?>
 <!DOCTYPE html>
