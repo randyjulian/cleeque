@@ -2,7 +2,7 @@
 	require_once 'LightOpenID-master/openid.php';
 	require 'databaseconnection.php';
 	require 'groupFunction.php';
-	$openid= new LightOpenID("localhost/Orbitals_Local_Server/nusnet.php");
+	$openid= new LightOpenID("https://cleeque.herokuapp.com/nusnet.php");
 
 	if($openid->mode){
 		if($openid->mode == 'cancel'){
@@ -25,7 +25,7 @@
     		}
 			header('Location: dashboard.php');
 		} else {
-			echo "the user hasn't logged in.";
+			echo "The user hasn't logged in.";
 		}
 	} else {
 		echo "Please login";
