@@ -3,7 +3,6 @@
 	$username=$_SESSION['username'];
 	include("groupFunction.php");
 	include("main_ics_processer.php");
-	include("databaseconnection.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -68,23 +67,13 @@
 		</div>
 		<div class="timetable">
 			<p>Your Timetable</p>
-			<div class="showingTable">
-				<?php 
-				$username=$_SESSION['username'];
-				$sql= "SELECT filename FROM userid WHERE username='$username' ";
-				$stmt = $database->prepare($sql);
-				$stmt->execute();
-				$result= $stmt->fetchColumn();
-				$result = unserialize($result);
-				printTableArray($result);
-				?>
-			</div>
-			<p id="editTimetableButton">Edit timetable</p>
-		</div>
-		<div class="showingGroup">
-			<h2>Groups</h2>
-			<?php
-				listingAllGroups($_SESSION['username']);
+			<?php 
+				$serializedArray=gettingFilenameWithUsername($_SESSION['username']);
+				echo "<p> $serializedArray </p>";
+				$array=unserialize($serializedArray);
+				print_r($array);
+
+				printTableArray($array);
 			?>
 		</div>
 	</div>

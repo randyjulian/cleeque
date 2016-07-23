@@ -1,14 +1,15 @@
 <?php
 	session_start();
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "orbital";
-		
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+
 	$location = null;
 	$error = false;
 try {
-    $database = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $database = new PDO("mysql:host=$server;dbname=$db", $username, $password);
     // set the PDO error mode to exception
     $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch(PDOException $e) {
@@ -22,14 +23,14 @@ try {
     }
     //NUSNET connection API
     require_once 'LightOpenID-master/openid.php';
-	$openid= new LightOpenID("localhost/Orbitals_Local_Server/webDesign.php");
+	$openid= new LightOpenID("https://cleeque.herokuapp.com/webDesign.php");
 
 	$openid->identity = 'https://openid.nus.edu.sg/';
 	$openid->required = array(
 		'contact/email',
 		'namePerson/friendly',
 		'namePerson');
-	$openid->returnUrl = 'http://localhost/Orbitals_Local_Server/nusnetlogin.php';
+	$openid->returnUrl = 'https://cleeque.herokuapp.com/nusnetlogin.php';
 
     if(isset($_POST['submit'])){
     	$errMessage='';

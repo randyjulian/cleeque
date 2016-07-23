@@ -177,13 +177,6 @@ $(document).ready(function(){
 		$('form').trigger('submit');
 	});
 
-	$('.groupName').on('click',function(e){
-		var groupNameForm = document.getElementById('choosingMember');
-		$(this).prev().attr('checked','checked');
-		$('#submitChosenGroup').trigger('click');
-	})
-
-
 
 
 });
