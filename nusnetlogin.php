@@ -22,7 +22,8 @@
 			if(checkingUsernameExistInUserid($username)){
 			$sql = "INSERT INTO userid(username, password, email, name)VALUES ('$username', 'NUSNET','$email', '$fullName')";
     		$database->exec($sql);
-    		}
+    		echo "Yeah";}
+    		echo "Boo";
 			header('Location:https://cleeque.herokuapp.com/dashboard.php');
 		} else {
 			echo "The user hasn't logged in.";
