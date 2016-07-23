@@ -23,7 +23,7 @@
 			$sql = "INSERT INTO userid(username, password, email, name)VALUES ('$username', 'NUSNET','$email', '$fullName')";
     		$database->exec($sql);
     		}
-			header('Location: dashboard.php');
+			header('Location:https://cleeque.herokuapp.com/dashboard.php');
 		} else {
 			echo "The user hasn't logged in.";
 		}
