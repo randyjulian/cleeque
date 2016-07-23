@@ -9,7 +9,7 @@ $db = substr($url["path"], 1);
 	$location = null;
 	$error = false;
 try {
-    $database = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $database = new PDO("mysql:host=$server;dbname=$db", $username, $password);
     // set the PDO error mode to exception
     $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch(PDOException $e) {
