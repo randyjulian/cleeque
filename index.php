@@ -39,7 +39,7 @@ try {
     }
     //NUSNET connection API
     require_once 'LightOpenID-master/openid.php';
-	$openid= new LightOpenID("https://cleeque.herokuapp.com/webDesign.php");
+	$openid= new LightOpenID("https://cleeque.herokuapp.com/index.php");
 
 	$openid->identity = 'https://openid.nus.edu.sg/';
 	$openid->required = array(
