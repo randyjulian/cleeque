@@ -83,9 +83,8 @@ function checkingUsernameExistInUserid($usernameInput){
 	$stmt->execute();
 	$count = $stmt->fetchColumn();
 	if($count!= 1){
-		echo "No username found<br> boo";
-		return 1;
-		echo "Boo";//exit();
+		echo "No username found<br>";
+		return 1;//exit();
 	} else {
 	return 0;
 	}
