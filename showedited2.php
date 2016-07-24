@@ -75,6 +75,7 @@ function printEditingSchedule($array){
   }
 }} else {
   $icsArray= gettingFilenameWithUsername($_SESSION['username']);
+  echo $icsArray;
 }
   echo "Welcome, ".$_SESSION['username']."<br>";
   printEditingSchedule($icsArray);
