@@ -74,11 +74,10 @@ function printEditingSchedule($array){
     header('Location: loginPage.php');
   }
 }} else {
-  $icsArray= gettingFilenameWithUsername($_SESSION['username']);
+  $username=$_SESSION['username'];
+  $icsArray= gettingFilenameWithUsername($username);
 }
   echo "Welcome, ".$_SESSION['username']."<br>";
-  echo $icsArray;
-  echo gettingFilenameWithUsername($_SESSION['username']);
   printEditingSchedule($icsArray);
   $_SESSION['icsArray']= $icsArray;
   $usernameSession = $_SESSION['username'];
