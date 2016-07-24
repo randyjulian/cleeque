@@ -64,7 +64,7 @@ function printEditingSchedule($array){
    echo "</form>";
 }
 	
-  echo "Welcome, ".$_SESSION['username']."<br>";
+  //echo "Welcome, ".$_SESSION['username']."<br>";
   $icsArray = $_SESSION['icsArray'];
   foreach($_POST['userinput'] as $day=>$subkey){
     //echo "$day<br>";
@@ -73,7 +73,7 @@ function printEditingSchedule($array){
     $icsArray[$day][$timeslot]=1;
   }
 }
-  printEditingSchedule($icsArray);
+  //printEditingSchedule($icsArray);
   $_SESSION['icsArray']= $icsArray;
   $usernameSession = $_SESSION['username'];
   $serialisedArray=serialize($icsArray);
