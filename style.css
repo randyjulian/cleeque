@@ -16,7 +16,8 @@ td {
 	border: 1px solid #6d6c6c;
 	overflow: hidden;
 	font-size: 12px;
-	color: #6d6c6c;
+	color: white;
+	background-color: #3498db
 	padding: 5px;
 }
 
@@ -26,7 +27,7 @@ tr{
 }
 
 .busy{
-    background-color: #FBC02D;
+    background-color: #999999;
     color: #01080e;
     
 }
