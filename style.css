@@ -624,8 +624,8 @@ tr{
 	padding: 8px;
 	background-color: white;
 	transition: linear 0.1s;
-	margin-left: 600px;
-	margin-right: 600px;
+	margin-left: 50px;
+	margin-right: 50px;
 	color: #3498db;
 	border-radius: 30px;
 	border: 1px #3498db solid; 
