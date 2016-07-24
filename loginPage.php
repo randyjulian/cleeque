@@ -104,6 +104,7 @@
 					if($_POST['groupName']==''){
 						echo "No name is input";
 					} else {
+						$usernameSession=$_SESSION['username'];
 						$groupName=$_POST['groupName'];
 						creatingGroup($usernameSession, $groupName);
 						echo "<script>console.log($usernameSession)</script>";
