@@ -63,6 +63,14 @@ function gettingGroupNameFromID($groupID){
 	return $stmt->fetchColumn();
 }
 
+function gettingNameFromUsername($username){
+	include("databaseconnection.php");
+	$sql = "SELECT name FROM userid WHERE username = '$username'";
+	$stmt = $database->prepare($sql);
+	$stmt->execute();
+	return $stmt->fetchColumn();
+}
+
 //Function to create group
 function creatingGroup($usernameSession, $groupName){
 	include("databaseconnection.php");
