@@ -10,7 +10,7 @@ function checkingUsernameExistInUserid($usernameInput){
 	$stmt = $database -> prepare($sql);
 	$stmt->execute();
 	$count = $stmt->fetchColumn();
-	if($count!= 1){
+	if(count($count)!= 1){
 		echo "No username found<br>";
 		return 1;//exit();
 	} else {
