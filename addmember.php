@@ -39,7 +39,7 @@ $_SESSION['groupID']=$_POST['groupNameSelected'];
 			<h1 id="welcomeHeader"><?php echo gettingGroupNameFromID($_SESSION['groupID']);?></h1>
 			<h6 id="welcomeHeaderFullName">The current group ID is <?php echo $_SESSION['groupID'];?></h6>
 		</div>
-		<div class="showingMembers">
+		<div class="showingMembers" style="margin: 0;">
 			<p>Members</p>
 			<?php
 				printingGroupMember($_SESSION['groupID']);

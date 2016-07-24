@@ -718,12 +718,11 @@ tr{
 
 .showingMembers{
 	background-color: #3498db;
-	padding-left: 30px;
+	padding-left: 20px;
 	font-family: "Montserrat";
 	color: white;
 	padding-top: 10px;
 	height: 200px;
-	margin-top: 25px;
 }
 
 .showingMembers p{
