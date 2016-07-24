@@ -73,14 +73,14 @@ function printEditingSchedule($array){
     $icsArray[$day][$timeslot]=1;
   }
 }
-  //printEditingSchedule($icsArray);
+  printEditingSchedule($icsArray);
   $_SESSION['icsArray']= $icsArray;
   $usernameSession = $_SESSION['username'];
   $serialisedArray=serialize($icsArray);
   $sql="UPDATE userid SET filename= '$serialisedArray' WHERE username='$usernameSession'";
   $stmt = $database->prepare($sql);
   $stmt->execute();
-  header("Location: https://cleeque.herokuapp.com/loginPage.php");
+  //header("Location: https://cleeque.herokuapp.com/loginPage.php");
 ?>
 
 </body>
