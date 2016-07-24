@@ -105,8 +105,13 @@ tr{
 
 #usernameNav a{
 	text-decoration: none;
-}
 
+}
+#usernameNav:hover{
+	cursor: pointer;
+	color: white;
+	background-color: #2b3856;
+}
 #login:hover{
 	cursor: pointer;
 	color: white;
