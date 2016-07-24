@@ -12,7 +12,9 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
-	<title> CLEEQUE</title>
+	<title>Cleeque | Dashboard</title>
+	<link rel="icon" type="image/png" href="/favicon.ico">
+	<meta name="theme-color" content="#ffffff">
 	<link type="text/css" rel="stylesheet" href="style.css"></link>
 	<!---Fonts-->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -58,7 +60,7 @@
 		</div>
 		<div class="uploadFile">
 			<p id="uploadFileHeader">Upload your timetable in iCalendar file or '.ics' below!</p>
-			<form id="uploadForm" method="post" action="upload2.php" enctype="multipart/form-data">
+			<form id="uploadForm" method="post" action="showedited2.php" enctype="multipart/form-data">
 					<input type="file" class="uploadBox" id="uploadBox" name="fileToUpload" style="display:none" />
 					<label for='uploadBox' id="chooseFileButton"><strong>Choose a file to upload</strong></label>
 					<button id="uploadButton" type="submit" style="display:none">Upload</button>

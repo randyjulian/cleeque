@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Homepage</title>
+	<title>Cleeque | Homepage</title>
 	<link rel="icon" type="image/png" href="/favicon.ico">
 	<meta name="theme-color" content="#ffffff">
 </head>
