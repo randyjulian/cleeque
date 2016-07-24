@@ -672,6 +672,7 @@ tr{
 	border: 1px solid;
 	cursor: pointer;
 	transition: 0.2s;
+	overflow: hidden;
 }
 
 .groupName :hover{

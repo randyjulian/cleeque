@@ -122,7 +122,7 @@ function printingGroupMember($groupID){
 	foreach($userArray as $key=>$value){
 		foreach($value as $subkey=>$subvalue){
 			$usernameFromID= gettingUsernameFromID($subvalue);
-		echo "<li> $usernameFromID</li>";
+		echo "<p class='groupName'> $usernameFromID</p>";
 		}
 	}
 
