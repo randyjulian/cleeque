@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	if(!isset($_SESSION['username'])){header('Location: index.php');}
 	$username=$_SESSION['username'];
 	include("groupFunction.php");
 	include("main_ics_processer.php");

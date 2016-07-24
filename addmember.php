@@ -1,5 +1,6 @@
 <?php
 session_start();
+if(!isset($_SESSION['username'])){header('Location: index.php');}
 include("groupFunction.php");
 include("main_ics_processer.php");
 if(isset($_POST['submit']) && !isset($_SESSION['groupID'])){
