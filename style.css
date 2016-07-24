@@ -261,7 +261,7 @@ tr{
 
 #cleeque{
 	float: left;
-	font-size: 30px;
+	font-size: 25px;
 	padding-left: 10px;
 	font-family: 'Montserrat', sans-serif;
 	border: none;
@@ -527,9 +527,13 @@ tr{
 	height: 300px;
 	position: initial;
 	top: 50px;
-	background-color: black;
+	background-image: url("http://i.imgur.com/rTTZQB8.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 	clear: both;
-	color: #3498db;
+	color: white;
 	font-size: 40px;
 	display: block;
 	z-index: 1;
