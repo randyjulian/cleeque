@@ -65,6 +65,7 @@ function printEditingSchedule($array){
 }
 	
   echo "Welcome, ".$_SESSION['username']."<br>";
+  if(isset($_POST['userinput'])){
   $icsArray = $_SESSION['icsArray'];
   foreach($_POST['userinput'] as $day=>$subkey){
     //echo "$day<br>";
@@ -72,7 +73,7 @@ function printEditingSchedule($array){
     //echo "$timeslot : $value<br>";
     $icsArray[$day][$timeslot]=1;
   }
-}
+}}
   printEditingSchedule($icsArray);
   $_SESSION['icsArray']= $icsArray;
   $usernameSession = $_SESSION['username'];
@@ -80,7 +81,6 @@ function printEditingSchedule($array){
   $sql="UPDATE userid SET filename= '$serialisedArray' WHERE username='$usernameSession'";
   $stmt = $database->prepare($sql);
   $stmt->execute();
-  header("Location: https://cleeque.herokuapp.com/loginPage.php");
 ?>
 
 </body>
