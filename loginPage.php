@@ -13,7 +13,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 	<title>Cleeque | Dashboard</title>
-	<link rel="icon" type="image/png" href="/favicon.ico">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 	<meta name="theme-color" content="#ffffff">
 	<link type="text/css" rel="stylesheet" href="style.css"></link>
 	<!---Fonts-->
