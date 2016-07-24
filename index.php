@@ -141,8 +141,7 @@ try {
 				<p><span style="font-size: 150px" >CLEEQUE</span></p>
 				<p id="tagline">Arranging a meeting has never been this easy</p>
 			</div>
-			<div class="slide" style="background-color:grey;">
-			<img src="http://i.imgur.com/H4esOFn.jpg">
+			<div class="slide" id="second">
 				<p style="font-color: white">Connecting The Dots</p>
 			</div> 
 			<div class="slide" id="first">	
