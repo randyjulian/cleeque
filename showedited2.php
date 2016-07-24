@@ -62,13 +62,14 @@ function printEditingSchedule($array){
 }
 	
   
-  if(isset($_POST['userinput'])){
+  if(isset($_POST['userinput'])||$_SESSION['form']){
     $icsArray = $_SESSION['icsArray'];
     foreach($_POST['userinput'] as $day=>$subkey){
     //echo "$day<br>";
     foreach($subkey as $timeslot => $value){
     //echo "$timeslot : $value<br>";
     $icsArray[$day][$timeslot]=1;
+    unset($_SESSION['form']);
     header('Location: loginPage.php');
   }
 }} else {
@@ -82,6 +83,7 @@ function printEditingSchedule($array){
   $sql="UPDATE userid SET filename= '$serialisedArray' WHERE username='$usernameSession'";
   $stmt = $database->prepare($sql);
   $stmt->execute();
+  $_SESSION['form']=true;
 
 
 ?>
