@@ -60,7 +60,7 @@
 		</div>
 		<div class="uploadFile">
 			<p id="uploadFileHeader">Upload your timetable in iCalendar file or '.ics' below!</p>
-			<form id="uploadForm" method="post" action="showedited2.php" enctype="multipart/form-data">
+			<form id="uploadForm" method="post" action="upload2.php" enctype="multipart/form-data">
 					<input type="file" class="uploadBox" id="uploadBox" name="fileToUpload" style="display:none" />
 					<label for='uploadBox' id="chooseFileButton"><strong>Choose a file to upload</strong></label>
 					<button id="uploadButton" type="submit" style="display:none">Upload</button>
