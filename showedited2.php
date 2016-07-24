@@ -59,7 +59,7 @@ function printEditingSchedule($array){
    echo "</table>";
    echo "<input type='submit' value='Submit'>";
    echo "</form>";
-   echo "<form action='group.php'>";
+   echo "<form action='loginPage.php'>";
    		echo "<input type='submit' value='Confirm'>";
    echo "</form>";
 }
