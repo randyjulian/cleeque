@@ -554,13 +554,14 @@ tr{
 }
 
 .uploadFile{
-	height: 190px;
+	height: 150px;
 	background-color: #3498db;
 }
 
 #uploadFileHeader{
-	font-size: 25px;
+	font-size: 20px;
 	color: white;
+	font-family: "Montserrat";
 	text-align: center;
 	margin-top: 0px;
 	padding-top: 30px;
@@ -581,18 +582,20 @@ tr{
 	display: block;
 	text-align: center;
 	clear: both;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 #chooseFileButton{
 	cursor: pointer;
 	transition: 0.1s;
 	background-color: white;
-	padding: 5px 10px 5px 10px;
-	font-size: 20px;
+	font-family: "Roboto";
+	padding: 8px 13px 8px 13px;
+	font-size: 15px;
 	border: 1px solid #d3d3d3;
-	border-radius: 5px;
+	border-radius: 10px;
 }
+
 
 #chooseFileButton:hover{
 	color: #0288D1;
@@ -601,10 +604,11 @@ tr{
 
 .timetable p{
 	text-align: center;
+	font-family: "Montserrat";
 	font-size: 20px;
 	display: block;
 	clear: both;
-	font-weight: bold;
+
 }
 
 .timetable table{
@@ -642,6 +646,7 @@ tr{
 .showingGroup{
 	background-color: #3498db;
 	padding-left: 30px;
+	font-family: "Montserrat";
 	color: white;
 	padding-top: 10px;
 	height: 200px;
