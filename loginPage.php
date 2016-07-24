@@ -85,7 +85,7 @@
 				}
 				?>
 			</div>
-			<a id="editTimetableButton" href="https://cleeque.herokuapp.com/showedited2.php">Edit timetable</a>
+			<a id="editTimetableButton" href="https://cleeque.herokuapp.com/showedited2.php" style="float: center;">Edit timetable</a>
 		</div>
 		<div class="showingGroup">
 			<h2>Groups</h2>
