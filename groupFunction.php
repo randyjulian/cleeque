@@ -136,14 +136,14 @@ function listingAllGroups($usernameSession){
 	$stmt->execute();
 	$groupArray=$stmt->fetchAll(PDO::FETCH_ASSOC);
 	if(empty($groupArray)){
-		echo "<h2> You have no groups! Please create one!</h2>";
+		echo "<p> You have no groups! Please create one!</p>";
 	} else {
 	echo "<form action='addmember.php' method='post' id='choosingMember'>";
 	foreach($groupArray as $key=>$value){
 		foreach ($value as $subkey => $subvalue) {
 			$groupName=gettingGroupNameFromID($subvalue);
 			echo "<input type='radio' name='groupNameSelected' value='$subvalue' style='display: none;'></input>";
-			echo "<label for='groupNameSelected' class='groupName'><strong>$groupName</strong></label>";
+			echo "<label for='groupNameSelected' class='groupName'>$groupName</label>";
 		}
 	}
 	echo " <input type='submit' value='Go!' name='submit' id='submitChosenGroup' style='display:none;'>";

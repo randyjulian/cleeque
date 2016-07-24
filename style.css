@@ -653,8 +653,9 @@ tr{
 	margin-top: 25px;
 }
 
-.showingGroup h2{
+.showingGroup p{
 	margin: 0;
+	font-size: 25px;
 	margin-bottom: 10px;
 
 }
