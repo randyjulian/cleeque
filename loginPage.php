@@ -75,8 +75,12 @@
 				$stmt = $database->prepare($sql);
 				$stmt->execute();
 				$result= $stmt->fetchColumn();
+				if($result==1){
 				$result = unserialize($result);
 				printTableArray($result);
+				} else {
+					echo "No File!";
+				}
 				?>
 			</div>
 			<p id="editTimetableButton">Edit timetable</p>
