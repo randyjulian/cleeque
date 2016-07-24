@@ -36,9 +36,7 @@ $fileType = pathinfo($_FILES['fileToUpload']['name'],PATHINFO_EXTENSION);
 if($fileType== 'ics'){
 	fillingArray($_FILES['fileToUpload']['tmp_name'],$userTimeslotArray);
 	$_SESSION['icsArray'] = $userTimeslotArray;
-	initialiseWeekArray($freeTimeArray);
-	comparison($userTimeslotArray, $freeTimeArray);
-	printEditingSchedule($freeTimeArray);
+   header("Location: showedited2.php");
 } else {
 	echo '<script>alert("Ops! That is not ics file!");window.location.href="dashboard.php"</script>';
 	
