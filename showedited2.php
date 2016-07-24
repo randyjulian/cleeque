@@ -63,18 +63,17 @@ function printEditingSchedule($array){
    		echo "<input type='submit' value='Confirm'>";
    echo "</form>";
 }
-
-
-	echo "Welcome, ".$_SESSION['username']."<br>";
-	$icsArray = $_SESSIOM['icsArray'];
-	foreach($_POST['userinput'] as $day=>$subkey){
-		//echo "$day<br>";
-		foreach($subkey as $timeslot => $value){
-		//echo "$timeslot : $value<br>";
-		$icsArray[$day][$timeslot]=1;
+	
+  echo "Welcome, ".$_SESSION['username']."<br>";
+  $icsArray = $_SESSION['icsArray'];
+  foreach($_POST['userinput'] as $day=>$subkey){
+    //echo "$day<br>";
+    foreach($subkey as $timeslot => $value){
+    //echo "$timeslot : $value<br>";
+    $icsArray[$day][$timeslot]=1;
   }
 }
-	printEditingSchedule($icsArray);
+  printEditingSchedule($icsArray);
   $_SESSION['icsArray']= $icsArray;
   $usernameSession = $_SESSION['username'];
   $serialisedArray=serialize($icsArray);
