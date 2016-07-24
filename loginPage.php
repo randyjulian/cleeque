@@ -106,7 +106,7 @@
 					} else {
 						$groupName=$_POST['groupName'];
 						creatingGroup($usernameSession, $groupName);
-						$_SESSION['groupName'] = $groupName;
+						echo "<script>alert($usernameSession.' AND '.$groupName);</script>";
 						echo "<script>window.location='$PHP_SELF'</script>";
 					}
 				}			
