@@ -63,9 +63,9 @@ function gettingGroupNameFromID($groupID){
 	return $stmt->fetchColumn();
 }
 
-function gettingNameFromUsername($username){
+function gettingNameFromUsername($usernameInput){
 	include("databaseconnection.php");
-	$sql = "SELECT name FROM userid WHERE username = '$username'";
+	$sql = "SELECT name FROM userid WHERE username = '$usernameInput'";
 	$stmt = $database->prepare($sql);
 	$stmt->execute();
 	return $stmt->fetchColumn();
