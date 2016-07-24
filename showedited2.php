@@ -63,7 +63,7 @@ function printEditingSchedule($array){
 }
 	
   
-  if(isset($_POST['userinput']) || isset($_SESSION['form'])){
+  if(isset($_POST['userinput']) || $_SESSION['form']==true){
     $icsArray = $_SESSION['icsArray'];
     foreach($_POST['userinput'] as $day=>$subkey){
     //echo "$day<br>";
