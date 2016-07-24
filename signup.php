@@ -20,7 +20,41 @@
 		</div>
 </div>
 
+<style>/* FOR SIGNUP PAGE*/
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
+input[type=submit] {
+    width: 50%;
+    background-color: #3498db;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #2b3856;
+}
+</style>
 
 <div class="mainSignup" style="text-align: center; padding-top: 70px; ">
 <form action= "signupsuccessful.php" method="post">
