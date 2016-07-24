@@ -184,7 +184,7 @@ $(document).ready(function(){
 	});
 
 	//clicking logo to go home
-	$('#logo').click(function(){
+	$('#logo, #cleeque').click(function(){
 		window.location="index.php";
 	})
 
