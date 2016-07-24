@@ -32,7 +32,7 @@ $db = substr($url["path"], 1);
 <body>
 <?php
 include("main_ics_processer.php");
-//include("groupFunction.php");
+include("groupFunction.php");
 function printEditingSchedule($array){
    echo "<form action='".$_SERVER['PHP_SELF']."' method='post' enctype='multipart/form-data'>";
    echo "<table>";
@@ -74,7 +74,7 @@ function printEditingSchedule($array){
     header('Location: loginPage.php');
   }
 }} else {
-  $icsArray= $_SESSION['icsArray'];
+  $icsArray= gettingFilenameWithUsername($_SESSION['username']);
 }
   echo "Welcome, ".$_SESSION['username']."<br>";
   printEditingSchedule($icsArray);
