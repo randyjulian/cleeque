@@ -539,6 +539,40 @@ tr{
 	z-index: 1;
 }
 
+.mainHeadergroup{
+	width: 100%;
+	height: 300px;
+	position: initial;
+	top: 50px;
+	background-image: url("http://i.imgur.com/dv63p67.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+	clear: both;
+	color: white;
+	font-size: 40px;
+	display: block;
+	z-index: 1;
+}
+
+.mainHeaderdashboard{
+	width: 100%;
+	height: 300px;
+	position: initial;
+	top: 50px;
+	background-image: url("http://i.imgur.com/dv63p67.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+	clear: both;
+	color: white;
+	font-size: 40px;
+	display: block;
+	z-index: 1;
+}
+
 #welcomeHeader{
 	margin-bottom: 0px;
 	text-align: center;
