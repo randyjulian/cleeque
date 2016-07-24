@@ -183,5 +183,10 @@ $(document).ready(function(){
 		$('#submitChosenGroup').trigger('click');
 	});
 
+	//clicking logo to go home
+	$('#logo').click(function(){
+		window.location="index.php";
+	})
+
 
 });
