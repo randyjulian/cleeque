@@ -75,13 +75,11 @@
 				$stmt = $database->prepare($sql);
 				$stmt->execute();
 				$result= $stmt->fetchColumn();
-				echo count($result)."<br>";
-				print_r($result);
 				if(count($result)==1){
 				$result = unserialize($result);
 				printTableArray($result);
 				} else {
-					echo "No File!";
+					echo "<p id='noTimetableError'>Please upload the timetable above!</p>";
 				}
 				?>
 			</div>
