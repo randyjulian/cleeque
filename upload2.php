@@ -38,8 +38,13 @@ if($fileType== 'ics'){
    $_SESSION['icsArray'] = $userTimeslotArray;
    initialiseWeekArray($freeTimeArray);
    comparison($userTimeslotArray, $freeTimeArray);
+   $usernameSession = $_SESSION['username'];
+  $serialisedArray=serialize($freeTimeArray);
+  $sql="UPDATE userid SET filename= '$serialisedArray' WHERE username='$usernameSession'";
+  $stmt = $database->prepare($sql);
+  $stmt->execute();
    //printEditingSchedule($freeTimeArray);
-   header('Location: showedited2.php');
+   header('Location: loginPage.php');
 } else {
    echo '<script>alert("Ops! That is not ics file!");window.location.href="dashboard.php"</script>';
    
