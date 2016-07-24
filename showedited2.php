@@ -32,7 +32,7 @@ $db = substr($url["path"], 1);
 <body>
 <?php
 include("main_ics_processer.php");
-include("groupFunction.php");
+//include("groupFunction.php");
 function printEditingSchedule($array){
    echo "<form action='".$_SERVER['PHP_SELF']."' method='post' enctype='multipart/form-data'>";
    echo "<table>";
