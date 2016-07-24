@@ -2,6 +2,13 @@
 session_start();
 include("groupFunction.php");
 include("main_ics_processer.php");
+if(isset($_POST['submit']) && !isset($_SESSION['groupID'])){
+$_SESSION['groupID']=$_POST['groupNameSelected'];
+} else {
+	if(!isset($_SESSION['groupID'])&& !isset($_POST['submit'])){
+		header("Location: loginPage.php");
+	}
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,16 +45,7 @@ include("main_ics_processer.php");
 			?>
 		</div>
 </div>
-<?php 
-	if(isset($_POST['submit']) && !isset($_SESSION['groupID'])){
-	$_SESSION['groupID']=$_POST['groupNameSelected'];
-	} else {
-		if(!isset($_SESSION['groupID'])&& !isset($_POST['submit'])){
-		echo "Error! No group was selected!";
-		exit();
-		}
-	}
-?>
+
 <form action= '<?php $_SERVER['PHP_SELF']?>' method='POST'>
 	Add Group Member: <input type ='text' name='username' placeholder='Username'>
 	<input type='submit' name='submit' value='Add Member'>
