@@ -66,14 +66,17 @@ function printEditingSchedule($array){
 	
   echo "Welcome, ".$_SESSION['username']."<br>";
   if(isset($_POST['userinput'])){
-  $icsArray = $_SESSION['icsArray'];
-  foreach($_POST['userinput'] as $day=>$subkey){
+    $icsArray = $_SESSION['icsArray'];
+    foreach($_POST['userinput'] as $day=>$subkey){
     //echo "$day<br>";
     foreach($subkey as $timeslot => $value){
     //echo "$timeslot : $value<br>";
     $icsArray[$day][$timeslot]=1;
   }
-}}
+}} else {
+  $icsArray= $_SESSION['icsArray'];
+}
+  
   printEditingSchedule($icsArray);
   $_SESSION['icsArray']= $icsArray;
   $usernameSession = $_SESSION['username'];
