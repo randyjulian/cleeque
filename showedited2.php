@@ -74,8 +74,7 @@ function printEditingSchedule($array){
     header('Location: loginPage.php');
   }
 }} else {
-  $username=$_SESSION['username'];
-  $icsArray= gettingFilenameWithUsername($username);
+  $icsArray= gettingFilenameWithUsername($_SESSION['username']);
 }
   echo "Welcome, ".$_SESSION['username']."<br>";
   printEditingSchedule($icsArray);
