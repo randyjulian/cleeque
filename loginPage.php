@@ -92,6 +92,7 @@
 			<?php
 				listingAllGroups($_SESSION['username']);
 			?>
+			<a id="addGroupButton" href="https://cleeque.herokuapp.com/showedited2.php" style="float: center;">Add a group</a>
 		</div>
 	</div>
 	<div class="footer">

@@ -620,7 +620,7 @@ tr{
 	overflow: scroll;
 }
 
-#editTimetableButton{
+#editTimetableButton, #addGroupButton{
 	text-decoration: none;
 	margin-top: 20px;
 	font-family: 'Roboto', sans-serif;
