@@ -75,6 +75,7 @@
 				$stmt = $database->prepare($sql);
 				$stmt->execute();
 				$result= $stmt->fetchColumn();
+				print_r($result);
 				if($result==1){
 				$result = unserialize($result);
 				printTableArray($result);
