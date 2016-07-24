@@ -34,7 +34,7 @@ $_SESSION['groupID']=$_POST['groupNameSelected'];
 		</div>
 </div>	
 
-<div class="main">
+<div class="mainGroup">
 		<div class="mainHeadergroup">
 			<h1 id="welcomeHeader"><?php echo gettingGroupNameFromID($_SESSION['groupID']);?></h1>
 			<h6 id="welcomeHeaderFullName">The current group ID is <?php echo $_SESSION['groupID'];?></h6>
@@ -71,9 +71,6 @@ if (!isset($_POST['username'])) {
 	}
 }
 ?>
-<h2> Current Group Members: </h2>
-<?php printingGroupMember($_SESSION['groupID']);?>
-<h1> The Common Free Time Slot For All Group Members!</h1>
 <?php
 //Initialise the free time array
 $groupMemberArray=gettingGroupMember($_SESSION['groupID']);
