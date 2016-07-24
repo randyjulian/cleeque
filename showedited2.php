@@ -1,5 +1,6 @@
 <?php
 	session_start();
+  if(!isset($_SESSION['username'])){header('Location: index.php');}
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $server = $url["host"];
 $username = $url["user"];
