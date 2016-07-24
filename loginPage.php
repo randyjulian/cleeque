@@ -47,7 +47,7 @@
 				<p>About</p>
 				<p>Contact Us</p>
 			</div>
-			<p id="usernameNav" style="text-decoration:none;"><a href="logout.php">Log Out</a></p>
+			<a id="usernameNav" style="text-decoration:none;" href="logout.php">Log Out</a>
 			<p id="responsiveNavButton"> &#9776; Menu</p>
 		</div>
 		
