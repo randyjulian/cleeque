@@ -80,7 +80,7 @@ function printEditingSchedule($array){
   $sql="UPDATE userid SET filename= '$serialisedArray' WHERE username='$usernameSession'";
   $stmt = $database->prepare($sql);
   $stmt->execute();
-  header("Location: loginPage.php");
+  header("Location: https://cleeque.herokuapp.com/loginPage.php");
 ?>
 
 </body>
