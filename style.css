@@ -150,6 +150,12 @@ tr{
     background-attachment: fixed;
     background-size: cover;
 }
+#second{	
+	background-image: url("http://i.imgur.com/H4esOFn.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;}
 .slide{
 	float:left;
 	width: 25%;
