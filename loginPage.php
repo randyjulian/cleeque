@@ -77,7 +77,7 @@
 				$result= $stmt->fetchColumn();
 				echo count($result)."<br>";
 				print_r($result);
-				if($result==1){
+				if(count($result)==1){
 				$result = unserialize($result);
 				printTableArray($result);
 				} else {
