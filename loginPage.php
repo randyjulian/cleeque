@@ -88,7 +88,7 @@
 			<a id="editTimetableButton" href="https://cleeque.herokuapp.com/showedited2.php" style="float: center;">Edit timetable</a>
 		</div>
 		<div class="showingGroup">
-			<h2>Groups</h2>
+			<p>Groups</p>
 			<?php
 				listingAllGroups($_SESSION['username']);
 			?>
