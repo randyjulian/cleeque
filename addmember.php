@@ -6,11 +6,38 @@ include("main_ics_processer.php");
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Cleeque | Group</title>
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" type="text/css" href="style.css"> 
 </head>
 <body>
-<h1> Welcome, <?php echo $_SESSION['username'];?>!</h1>
+
+<div class="navbar">
+		<img id="logo" src="http://i.imgur.com/NXXGa4e.png" height="35" width="35" style="float: left; margin-top: 6.4px;"><p id= "cleeque" style="margin-top:0px;" >  CLEEQUE</p> 
+		<div class="menu" style="float:right;">
+			<div class="mainMenu">
+				<p >Home</p>
+				<p>About</p>
+				<p>Contact Us</p>
+			</div>
+			<a id="usernameNav" style="text-decoration:none;" href="logout.php">Log Out</a>
+			<p id="responsiveNavButton"> &#9776; Menu</p>
+		</div>
+</div>	
+
+<div class="main">
+		<div class="mainHeader">
+			<h1 id="welcomeHeader"><?php echo gettingGroupNameFromID($_SESSION['groupID']);?></h1>
+			<h6 id="welcomeHeaderFullName">The current group ID is <?php echo $_SESSION['groupID'];?></h6>
+		</div>
+		<div class="showingMembers">
+			<p>Members</p>
+			<?php
+				printingGroupMember($_SESSION['groupID']);
+			?>
+		</div>
+</div>
 <?php 
 	if(isset($_POST['submit']) && !isset($_SESSION['groupID'])){
 	$_SESSION['groupID']=$_POST['groupNameSelected'];
@@ -21,8 +48,6 @@ include("main_ics_processer.php");
 		}
 	}
 ?>
-<h2>The current group is "<?php echo gettingGroupNameFromID($_SESSION['groupID']);?> "</h2>
-<h2>The current group ID is <?php echo $_SESSION['groupID'];?></h2>
 <form action= '<?php $_SERVER['PHP_SELF']?>' method='POST'>
 	Add Group Member: <input type ='text' name='username' placeholder='Username'>
 	<input type='submit' name='submit' value='Add Member'>
