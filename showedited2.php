@@ -74,8 +74,15 @@ function printEditingSchedule($array){
     header('Location: loginPage.php');
   }
 }} else {
-  $icsArray= gettingFilenameWithUsername($_SESSION['username']);
-  echo $icsArray;
+  $username=$_SESSION['username'];
+  $sql= "SELECT filename FROM userid WHERE username='$username' ";
+  $stmt = $database->prepare($sql);
+  $stmt->execute();
+  $result= $stmt->fetchColumn();
+  if(count($result)==1){
+    $icsArray = unserialize($result);
+    echo $icsArray;
+  }
 }
   echo "Welcome, ".$_SESSION['username']."<br>";
   printEditingSchedule($icsArray);
