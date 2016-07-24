@@ -92,7 +92,24 @@
 			<?php
 				listingAllGroups($_SESSION['username']);
 			?>
-			<a id="addGroupButton" href="https://cleeque.herokuapp.com/showedited2.php" style="float: center;">Add a group</a>
+			<form action="<?php $_SERVER['PHP_SELF'];?>" method="POST">
+				<p id="newGroupInput"> New Group Name: </p><input type="text" name="groupName" placeholder="Group Name" />
+				<input type="submit" name="submit" value="Create a new group">
+			</form>
+			<?php
+				if(!isset($_POST['groupName'])){
+					exit();
+				} else {
+					if($_POST['groupName']==''){
+						echo "No name is input";
+					} else {
+						$groupName=$_POST['groupName'];
+						creatingGroup($usernameSession, $groupName);
+						$_SESSION['groupName'] = $groupName;
+						echo "<script>window.location='$PHP_SELF'</script>";
+					}
+				}			
+			?>
 		</div>
 	</div>
 	<div class="footer">
