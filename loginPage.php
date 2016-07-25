@@ -28,9 +28,8 @@
 <style>/* FOR LoginPage PAGE*/
 input.newgroup[type=text], select {
     width: 20%;
-    padding: 12px 20px;
+    padding: 6px 10px;
     margin: 8px 8px;
-    display: block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -43,7 +42,7 @@ input.newgroupsubmit[type=submit] {
     width: 10%;
     background-color: white;
     color: #3498db;
-    padding: 14px 20px;
+    padding: 6px 10px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
