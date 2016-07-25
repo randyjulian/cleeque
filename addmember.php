@@ -88,7 +88,7 @@ $_SESSION['groupID']=$_POST['groupNameSelected'];
     border: none;
     border-radius: 7px;
     cursor: pointer;
-    font-family: "Roboto";
+    font-family: "Montserrat";
     font-size: 15px;
 	}
 	input.peopledependent[type=submit]:hover {
@@ -142,7 +142,6 @@ printTableArray($freeTimeArray);
 	<input  style="margin: auto;" class="peopledependent" type='submit' name='submit' value='Find common free slot for selected users!'><br>
 </form>
 
-<h2>Click <a href="peopledependent.php">here</a> to get the schedule for selected users only</h2>
 
 </body>
 </html>
