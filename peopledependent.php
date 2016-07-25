@@ -6,7 +6,7 @@
 	if(!isset($_SESSION['username'])){header('Location: index.php');}
 	$username=$_SESSION['username'];
 	$_SESSION['fullName']=gettingNameFromUsername($_SESSION['username']);
-	$groupID=$_SESSION['groupID'];
+	
 ?>
 <!DOCTYPE html>
 <html>
@@ -111,12 +111,6 @@ input.member[type=checkbox] select{
 	//echo "<br><br><input type='submit' value='Submit'>";
 	echo "<br><br><input class='submit' type='submit'>";
 	echo "</form>";
-	$_SESSION['groupID']=$groupID;
-?>
-    <form action="addmember.php" method="POST">
-        <input class= "return" type="submit" name="submit" value="Cancel">
-    </form>
-<?php
 
 	if(isset($_POST['userChosen'])){
 		//$freeTimeArray=array();
@@ -134,9 +128,7 @@ input.member[type=checkbox] select{
 		exit();
 	}
 	echo "<p id='selectmember'> Common Free Time For Selected Users</p>";
-	echo "<div class='showTableDiv'>";
 	printTableArray($freeTimeArray);
-	echo "</div>";
 
 	
 
