@@ -23,11 +23,11 @@ $error = false;
 
 // functions to check if the respective forms is empty and when redirect return the previous correct value
 if (isset($_POST['name'])==false || $_POST['name']==NULL){
-	$location = $location.'&named=1'.'&email='.$email; $error = true;}
+	$location = $location.'&named=1'.'&email='.$email.'&fullname='.$fullname; $error = true;}
 if (isset($_POST['password'])==0 || $_POST['password']==NULL){
 	$location .= '&pass=1';$error = true;}
 if (isset($_POST['email'])==0 || $_POST['email']==NULL){
-	$location .= '&emailed=1'.'&name='.$name;$error = true;}
+	$location .= '&emailed=1'.'&name='.$name.'&fullname='.$fullname;$error = true;}
 if (!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){
   $location .= '&emailformaterror=1&email='.$email.'&name='.$name;$error=true;}
 if (isset($_POST['fullname'])==false || $_POST['fullname']==NULL){
