@@ -101,8 +101,8 @@ input.newgroupsubmit[type=submit]:hover {
 					<input type="file" class="uploadBox" id="uploadBox" name="fileToUpload" style="display:none" />
 					<label for='uploadBox' id="chooseFileButton"><strong>Choose a file to upload</strong></label>
 					<button id="uploadButton" type="submit" style="display:none">Upload</button>
-				</div>
 			</form>
+		</div>
 		<div class="uploadButton">
 		</div>
 		<div class="timetable">
@@ -149,9 +149,9 @@ input.newgroupsubmit[type=submit]:hover {
 				}			
 			?>
 		</div>
-	<div class="footer">
-		<p style="text-align: left;"> &copy Cleeque 2016</p>
-	</div>
+		<div class="footer">
+			<p style="text-align: left;"> &copy Cleeque 2016</p>
+		</div>
 	</div>
 </div>
 
