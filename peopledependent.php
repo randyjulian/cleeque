@@ -131,6 +131,12 @@ input.return[type=submit]:hover {
 	echo "<br><br><input class='submit' type='submit'>";
 	echo "</form>";
 
+	?>
+<form action="loginPage.php" method="POST">
+        <input class= "return" type="submit" name="submit" value="Cancel">
+    </form>
+	<?php 
+
 	if(isset($_POST['userChosen'])){
 		//$freeTimeArray=array();
 		initialiseWeekArray($freeTimeArray);
