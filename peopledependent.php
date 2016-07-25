@@ -79,7 +79,7 @@ input.submit[type=submit] {
     background-color: #3498db;
     color: white;
     padding: 6px 10px;
-    margin: 8px 8px;
+    margin: 8px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;

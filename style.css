@@ -175,7 +175,6 @@ tr{
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    margin-top: -25px;
 }
 #second{	
 	background-image: url("http://i.imgur.com/H4esOFn.jpg");
@@ -382,7 +381,7 @@ tr{
 	font-size: 40px;
 	padding-bottom: 5px;
 	position: relative;
-	top: -25%;
+	top: -23px;
 }
 
 .modalBody{
@@ -802,4 +801,9 @@ tr{
 .showTableDiv{
 	overflow-x: scroll;
 	padding-bottom: 10px;
+}
+
+#min {
+
+	font-size: 50px;
 }
