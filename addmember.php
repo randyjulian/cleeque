@@ -99,6 +99,7 @@ if (!isset($_POST['username'])) {
     display: block;
     padding: 14px 20px;
     margin: 8px 0;
+    margin-top: -40px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
@@ -129,7 +130,7 @@ if (!isset($_POST['username'])) {
 <div class="mainGroup">
 		<div class="mainHeadergroup">
 			<h1 id="welcomeHeader"><?php echo gettingGroupNameFromID($_SESSION['groupID']);?></h1>
-			<h6 id="welcomeHeaderFullName">The current group ID is <?php echo $_SESSION['groupID'];?></h6>
+			<h6 id="welcomeHeaderFullName">Group ID :<?php echo $_SESSION['groupID'];?></h6>
 			<form action="exitGroup.php" method='POST'>
 				<p id="addmember"  style="text-align: center;">
 				<input  style="margin: auto;" class="quitgroup" type='submit' name='submit' value='Quit Group'><br>
