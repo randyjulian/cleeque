@@ -79,8 +79,8 @@ if (!isset($_POST['username'])) {
 
 	input.peopledependent[type=submit],select {
     width: 40%;
-    background-color: #3498db;
-    color: white;
+    background-color: white;
+    color: #3498db;
     display: block;
     padding: 14px 20px;
     margin: 8px 0;
@@ -132,7 +132,7 @@ if (!isset($_POST['username'])) {
 <div class="mainGroup">
 		<div class="mainHeadergroup">
 			<h1 id="welcomeHeader"><?php echo gettingGroupNameFromID($_SESSION['groupID']);?></h1>
-			<h6 id="welcomeHeaderFullName">Group ID :<?php echo $_SESSION['groupID'];?></h6>
+			<h6 id="welcomeHeaderFullName">Group ID : <?php echo $_SESSION['groupID'];?></h6>
 			<form action="exitGroup.php" method='POST'>
 				<p id="addmember"  style="text-align: center;">
 				<input  style="margin-left: auto; margin-right: auto;" class="quitgroup" type='submit' name='submit' value='Quit Group'><br>

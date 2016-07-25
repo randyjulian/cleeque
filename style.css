@@ -786,6 +786,7 @@ tr{
 #addmember {
 	font-family: "Montserrat";
 	font-size: 25px;
+	background-color: #3498db; 
 }
 
 .description{
