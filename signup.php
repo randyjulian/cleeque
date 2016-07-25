@@ -118,7 +118,7 @@ try {
 </div>
 
 <style>/* FOR SIGNUP PAGE*/
-.form1 input[type=text].form1, select {
+input.form1[type=text], select {
     width: 30%;
     padding: 12px 20px;
     margin: 8px 8px;
