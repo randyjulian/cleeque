@@ -78,8 +78,8 @@ $_SESSION['groupID']=$_POST['groupNameSelected'];
 	}
 </style>
 <form action= '<?php $_SERVER['PHP_SELF']?>' method='POST'>
-	<p id="addmember">Add Group Member: </p>><input class="addmember" type ='text' name='username' placeholder='Username'>
-	<input class="submit" type='submit' name='submit' value='Add Member'>
+	<p id="addmember"  style="text-align: center;">Add Group Member: </p><input class="addmember"  style="margin: auto;" type ='text' name='username' placeholder='Username'>
+	<input  style="margin: auto;" class="submit" type='submit' name='submit' value='Add Member'>
 </form>
 <?php
 if (!isset($_POST['username'])) {
