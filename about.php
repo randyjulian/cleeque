@@ -66,7 +66,7 @@
 			<p id="descriptionContent">Cleeque aims to facilitate meet up arrangement so that work can be more productive and friends would be more bonded. This web application is designed especially for NUS students but with a big plan to extend beyond the NUS community. As such, currently, the website only supports the iCalendar file downloaded from <a href="https://nusmods.com/" style="text-decoration:none;">nusmods.com</a>.
 			<br>
 			<br>
-			This web application is a part of the NUS computing project module called "Orbital". If you have any feedback or suggestion, please drop us an email at <u><a href="mailto:krittin.kawkeeree@u.nus.edu?subject=Cleeque Feedback">krittin.kawkeeree@u.nus.edu</a></u> or <u><a href="randyjulian@u.nus.edu?subject=Cleeque Feeback">randyjulian@u.nus.edu</a></u>.</p>
+			This web application is a part of the NUS computing project module called "Orbital". If you have any feedback or suggestion, please drop us an email at <a href="mailto:krittin.kawkeeree@u.nus.edu?subject=Cleeque Feedback" style="text-decoration:none;color:#3498db;">Krittin</a> or <a href="randyjulian@u.nus.edu?subject=Cleeque Feeback" style="text-decoration:none;color:#3498db;">Randy</a>.</p>
 		</div>
 		
 	</div>
