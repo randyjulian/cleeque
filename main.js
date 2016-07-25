@@ -172,7 +172,7 @@ $(document).ready(function(){
 
 
 	//drag-and-drop
-	$('input').on('change', function(e){
+	$('#uploadBox').on('change', function(e){
 		console.log(e);
 		$('form').trigger('submit');
 	});
