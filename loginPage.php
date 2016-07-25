@@ -3,9 +3,9 @@
 	include("groupFunction.php");
 	include("main_ics_processer.php");
 	include("databaseconnection.php");
-	if(!isset($_SESSION['username'])){header('Location: index.php');}
+	//if(!isset($_SESSION['username'])){header('Location: index.php');}
 	$username=$_SESSION['username'];
-	$_SESSION['fullName']=gettingNameFromUsername($_SESSION['username']);
+	//$_SESSION['fullName']=gettingNameFromUsername($_SESSION['username']);
 	
 ?>
 <!DOCTYPE html>
@@ -87,8 +87,6 @@ input.newgroupsubmit[type=submit]:hover {
 			<a id="usernameNav" style="text-decoration:none;" href="logout.php">Log Out</a>
 			<p id="responsiveNavButton"> &#9776; Menu</p>
 		</div>
-		
-
 	</div>
 	<div class="main">
 		<div class="mainHeaderdashboard">
@@ -153,7 +151,10 @@ input.newgroupsubmit[type=submit]:hover {
 			<p style="text-align: left;"> &copy Cleeque 2016</p>
 		</div>
 	</div>
+<<<<<<< HEAD
 </div>
+=======
+>>>>>>> 44df3fb968bdeefbd671b10962f9b1677c3c6d0b
 
 
 
