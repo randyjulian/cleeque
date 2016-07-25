@@ -300,6 +300,7 @@ tr{
 	margin-left: 50px;
 	margin-top: 2px;
 	position: relative;
+	cursor: pointer;
 }
 
 .sliderController{
@@ -766,4 +767,8 @@ tr{
 #addmember {
 	font-family: "Montserrat";
 	font-size: 25px;
+}
+
+.description{
+	padding: 0px 40px;
 }
