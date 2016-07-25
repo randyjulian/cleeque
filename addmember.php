@@ -93,6 +93,7 @@ if (!isset($_POST['username'])) {
 
 	input.quitgroup[type=submit]:hover {
     background-color: red;
+    color: white;
     transition: 0.2s;
 	}
 
