@@ -39,6 +39,7 @@ if (!isset($_POST['username'])) {
 	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 

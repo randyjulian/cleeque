@@ -174,7 +174,8 @@ tr{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover
+    margin-top: -25px;
 }
 #second{	
 	background-image: url("http://i.imgur.com/H4esOFn.jpg");
