@@ -106,7 +106,6 @@ function checkingUsernameExistInGroup($groupID,$usernameInput){
 	$stmt->execute();
 	$count = $stmt->fetchColumn();
 	if($count >= 1){
-		echo "User exists inside the group<br>";
 		return 1;//exit();
 	} else {
 	return 0;
