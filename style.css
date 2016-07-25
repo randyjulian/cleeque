@@ -178,7 +178,9 @@ tr{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;}
+    background-size: cover;
+	font-size: 50px; }
+
 .slide{
 	float:left;
 	width: 25%;
