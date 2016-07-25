@@ -93,7 +93,7 @@ input.newgroupsubmit[type=submit]:hover {
 	<div class="main">
 		<div class="mainHeaderdashboard">
 			<h1 id="welcomeHeader"><?php echo $_SESSION['username'];?></h1>
-			<h6 id="welcomeHeaderFullName"><?php echo $_SESSION['fullName'];?></h3>
+			<h6 id="welcomeHeaderFullName"><?php echo $_SESSION['fullName'];?></h6>
 		</div>
 		<div class="uploadFile">
 			<p id="uploadFileHeader">Upload your timetable in iCalendar file or '.ics' below!</p>
@@ -149,10 +149,13 @@ input.newgroupsubmit[type=submit]:hover {
 				}			
 			?>
 		</div>
-		<div class="footer">
+	<div class="footer">
 		<p style="text-align: left;"> &copy Cleeque 2016</p>
-		</div>
 	</div>
+	</div>
+</div>
+
+
 
 
 
