@@ -45,9 +45,9 @@
 		<img id="logo" src="http://i.imgur.com/NXXGa4e.png" height="35" width="35" style="float: left; margin-top: 6.4px;"><p id= "cleeque" style="margin-top:0px;" >  CLEEQUE</p> 
 		<div class="menu" style="float:right;">
 			<div class="mainMenu">
-				<p >Home</p>
-				<p>About</p>
-				<p>Contact Us</p>
+				<p><a href="index.php">Home</a></p>
+				<p><a href="about.php">About</a></p>
+				<p><a href="contactus.php">Contact Us</a></p>
 			</div>
 			<?php 
 				if(isset($_SESSION['username'])){
@@ -64,7 +64,7 @@
 	<div class="main" style="padding-top:50px;">
 		<div class="description">
 			<p id="descriptionHeader">What's this project?</p>
-			<p id="descriptionContent">Cleeque aims to facilitate meet up arrangement so that work can be more productive and friends would be more bonded. This web application is designed especially for NUS students but with a big plan to extend beyond the NUS community. As such, currently, the website only supports the iCalendar file downloaded from <a href="https://nusmods.com/">nusmods.com</a>.
+			<p id="descriptionContent">Cleeque aims to facilitate meet up arrangement so that work can be more productive and friends would be more bonded. This web application is designed especially for NUS students but with a big plan to extend beyond the NUS community. As such, currently, the website only supports the iCalendar file downloaded from <a href="https://nusmods.com/" style="text-decoration:none;">nusmods.com</a>.
 			<br>
 			<br>
 			This web application is a part of the NUS computing project module called "Orbitals". If you have any feedback or suggestion, please drop us an email at <strong>krittin.kawkeeree@u.nus.edu</strong> or <strong>RANDY EMAIL</strong>.</p>
