@@ -92,6 +92,11 @@ input.submit[type=submit]:hover {
     transition: 0.2s;
     color: white;
 }
+
+input.member
+{
+	background-color: blue;
+}
 </style>
 
 <br><br><p>Select the members:
@@ -105,7 +110,7 @@ input.submit[type=submit]:hover {
 		}
 	}
 	//echo "<br><br><input type='submit' value='Submit'>";
-	echo "<br><br><input class='submit' type='submit'>Submit</button>";
+	echo "<br><br><input class='submit' type='submit'>";
 	echo "</form>";
 
 	if(isset($_POST['userChosen'])){
