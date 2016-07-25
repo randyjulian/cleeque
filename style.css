@@ -15,6 +15,7 @@ table{
 }
 
 td {
+
 	text-align: center;
 	border: 1px solid #6d6c6c;
 	overflow: hidden;
@@ -41,12 +42,14 @@ tr{
 }
 
 .header{
+	font-family: "Roboto";
 	background-color: #0288D1;
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
 .day{
+	font-family: "Roboto";
 	background-color: #0288D1;
 	text-align: left;
 }
@@ -255,7 +258,7 @@ tr{
     animation-duration: 0.4s;
     padding-top: 0px;
     overflow: hidden;
-    height: 370px;
+    height: 330px;
     width: 400px;
     font-size: 13px;
     font-family: "Roboto";
@@ -759,7 +762,7 @@ tr{
 	font-family: "Montserrat";
 	color: white;
 	padding-top: 10px;
-	height: 200px;
+	height: 350px;
 }
 
 .showingMembers p{

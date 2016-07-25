@@ -41,32 +41,6 @@ if (!isset($_POST['username'])) {
 	<link rel="stylesheet" type="text/css" href="style.css"> 
 </head>
 <body>
-<div class="navbar">
-		<img id="logo" src="http://i.imgur.com/NXXGa4e.png" height="35" width="35" style="float: left; margin-top: 6.4px;"><p id= "cleeque" style="margin-top:0px;" >  CLEEQUE</p> 
-		<div class="menu" style="float:right;">
-			<div class="mainMenu">
-				<p><a href="index.php">Home</a></p>
-				<p><a href="about.php">About</a></p>
-				<p><a href="contactus.php">Contact Us</a></p>
-			</div>
-			<a id="usernameNav" style="text-decoration:none;" href="logout.php">Log Out</a>
-			<p id="responsiveNavButton"> &#9776; Menu</p>
-		</div>
-</div>	
-
-<div class="mainGroup">
-		<div class="mainHeadergroup">
-			<h1 id="welcomeHeader"><?php echo gettingGroupNameFromID($_SESSION['groupID']);?></h1>
-			<h6 id="welcomeHeaderFullName">The current group ID is <?php echo $_SESSION['groupID'];?></h6>
-			<a href="exitGroup.php" id="exitGroupButton">Exit This Group</a>
-		</div>
-		<div class="showingMembers" style="margin: 0;">
-			<p>Members</p>
-			<?php
-				printingGroupMember($_SESSION['groupID']);
-			?>
-		</div>
-</div>
 
 <style>
 	input.addmember[type=text],select {
@@ -112,11 +86,64 @@ if (!isset($_POST['username'])) {
     font-family: "Montserrat";
     font-size: 15px;
 	}
-	input.peopledependent[type=submit]:hover {
+
+	input.quitgroup[type=submit]:hover {
     background-color: #2b3856;
     transition: 0.2s;
 	}
+
+	input.quitgroup[type=submit],select {
+    width: 10%;
+    background-color: white;
+    color: black;
+    display: block;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-size: 15px;
+	}
+	
+	input.peopledependent[type=submit]:hover {
+    background-color: #696969;
+    color: white;
+    transition: 0.2s;
+	}
 </style>
+
+<div class="navbar">
+		<img id="logo" src="http://i.imgur.com/NXXGa4e.png" height="35" width="35" style="float: left; margin-top: 6.4px;"><p id= "cleeque" style="margin-top:0px;" >  CLEEQUE</p> 
+		<div class="menu" style="float:right;">
+			<div class="mainMenu">
+				<p><a href="index.php">Home</a></p>
+				<p><a href="about.php">About</a></p>
+				<p><a href="contactus.php">Contact Us</a></p>
+			</div>
+			<a id="usernameNav" style="text-decoration:none;" href="logout.php">Log Out</a>
+			<p id="responsiveNavButton"> &#9776; Menu</p>
+		</div>
+</div>	
+
+<div class="mainGroup">
+		<div class="mainHeadergroup">
+			<h1 id="welcomeHeader"><?php echo gettingGroupNameFromID($_SESSION['groupID']);?></h1>
+			<h6 id="welcomeHeaderFullName">The current group ID is <?php echo $_SESSION['groupID'];?></h6>
+			<form action="exitGroup.php" method='POST'>
+				<p id="addmember"  style="text-align: center;">
+				<input  style="margin: auto;" class="quitgroup" type='submit' name='submit' value='Quit Group'><br>
+			</form>
+		</div>
+		<div class="showingMembers" style="margin: 0;">
+			<p>Members</p>
+			<?php
+				printingGroupMember($_SESSION['groupID']);
+			?>
+		</div>
+</div>
+
+
 <form action= '<?php $_SERVER['PHP_SELF']?>' method='POST'>
 	<p id="addmember"  style="text-align: center;">Add Group Member: </p><input class="addmember"  style="margin: auto;" type ='text' name='username' placeholder='Username'> <br>
 	<input  style="margin: auto;" class="submit" type='submit' name='submit' value='Add Member'><br>
