@@ -47,9 +47,39 @@ $_SESSION['groupID']=$_POST['groupNameSelected'];
 		</div>
 </div>
 
+<style>
+	input.addmember[type=text],select {
+	width: 30%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-size: 15px;
+
+	}
+	input.submit[type=submit],select {
+    width: 30%;
+    background-color: #3498db;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 15px;
+	}
+	input.submit[type=submit]:hover {
+    background-color: #2b3856;
+    transition: 0.2s;
+	}
+</style>
 <form action= '<?php $_SERVER['PHP_SELF']?>' method='POST'>
-	Add Group Member: <input type ='text' name='username' placeholder='Username'>
-	<input type='submit' name='submit' value='Add Member'>
+	<p id="addmember">Add Group Member: </p>><input class="addmember" type ='text' name='username' placeholder='Username'>
+	<input class="submit" type='submit' name='submit' value='Add Member'>
 </form>
 <?php
 if (!isset($_POST['username'])) {
