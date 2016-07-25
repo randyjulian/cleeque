@@ -154,8 +154,9 @@ input.return[type=submit]:hover {
 		exit();
 	}
 	echo "<p id='selectmember'> Common Free Time For Selected Users</p>";
+	echo '<div class="showTableDiv">';
 	printTableArray($freeTimeArray);
-
+	echo '</div>';
 	
 
 ?>
