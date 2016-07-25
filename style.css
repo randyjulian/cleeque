@@ -822,8 +822,11 @@ tr{
 #descriptionHeader {
 	font-family: "Montserrat";
 	font-size: 30px;
+	color: white;
+
 }
 #descriptionContent {
 	font-family: "Montserrat";
 	font-size: 20px;
+	color: white;
 }
