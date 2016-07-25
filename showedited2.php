@@ -196,7 +196,7 @@ function printEditingSchedule($array){
       $_SESSION['form']=true;
     ?>
     
-    <form action="reset.php" method="POST">
+    <form action="reset.php" method="POST" style="display: none;">
         <input class= "reset" type="submit" name="submit" value="Reset Timetable">
     </form>
 
