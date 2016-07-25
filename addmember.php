@@ -23,6 +23,8 @@ if (!isset($_POST['username'])) {
 				$userNotInGroup=checkingUsernameExistInGroup($_SESSION['groupID'],$usernameAdded);
 				if(!$userNotInGroup){
 			addingGroupMember($_SESSION['groupID'],$usernameAdded);
+			}else {
+				echo "<script>alert('The username already exists')</script>";
 			}
 		}else {
 			echo "<script> alert('Username is not found!')</script>";
