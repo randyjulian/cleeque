@@ -148,6 +148,7 @@ if (!isset($_POST['username'])) {
 	<p id="addmember"  style="text-align: center;">Add Group Member: </p><input class="addmember"  style="margin: auto;" type ='text' name='username' placeholder='Username'> <br>
 	<input  style="margin: auto;" class="submit" type='submit' name='submit' value='Add Member'><br>
 </form>
+<div class="showTableInAddmember">
 <?php
 //Initialise the free time array
 $groupMemberArray=gettingGroupMember($_SESSION['groupID']);
@@ -164,6 +165,7 @@ foreach ($groupMemberArray as $key => $value) {
 }
 printTableArray($freeTimeArray);
 ?>
+</div>
 
 <form action="peopledependent.php" method='POST'>
 	<p id="addmember"  style="text-align: center;">
