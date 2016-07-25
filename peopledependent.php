@@ -40,14 +40,16 @@
     button {background: 'blue';
 			color: 'navy';
 			width: 0px;}
-	.ui-helper-hidden-accessible {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
+
+	.checkbox label:before {
+    border-radius: 3px;
+}		
+
+	input.member[type=checkbox]:checked {
+    font-size: 15px;
+    color: red;
+    text-align: center;
+   
 }
     </style>
 </head>
@@ -91,7 +93,7 @@
 	foreach($groupMember as $key=>$value){
 		foreach ($value as $subkey => $userID) {
 			$name= gettingUsernameFromID($userID);
-			echo "<input type='checkbox' name='userChosen[$name]' value='$userID' id='check'>$name</input>";
+			echo "<input type='checkbox' class='member' name='userChosen[$name]' value='$userID' id='check'>$name</input>";
 		}
 	}
 	//echo "<br><br><input type='submit' value='Submit'>";
