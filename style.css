@@ -132,7 +132,7 @@ tr{
 	background-color: white;
 	display: block;
 	clear: both;
-	overflow: hidden;
+	padding-top: 50px;
 }
 .mainGroup{
 	width: 100%;
@@ -608,7 +608,7 @@ tr{
 #welcomeHeader{
 	margin-bottom: 0px;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 0px;
 	padding-top: 50px;
 	font-family: "Montserrat";
 }
