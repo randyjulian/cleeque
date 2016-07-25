@@ -19,7 +19,7 @@
     -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 	<title>Cleeque | People Dependent Slots</title>
@@ -67,26 +67,50 @@
 			<div class="mainMenu">
 				<p><a href="index.php">Home</a></p>
 				<p><a href="about.php">About</a></p>
-				<p><a href="contactus.php">Contact Us</a></p>
 			</div>
 			<a id="usernameNav" style="text-decoration:none;" href="logout.php">Log Out</a>
 			<p id="responsiveNavButton"> &#9776; Menu</p>
 		</div>
 	</div>
 
+<style>
+input.submit[type=submit] {
+    width: 10%;
+    background-color: #3498db;;
+    color: white;
+    padding: 6px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 15px;
+}
 
-<br><br>
+input.submit[type=submit]:hover {
+    background-color: #2b3856;
+    transition: 0.2s;
+    color: white;
+}
+
+input.member
+{
+	background-color: blue;
+}
+</style>
+
+<br><br><p>Select the members:
 <form action="<?php echo $_SERVER['PHP_SELF'] ;?>" method="post" name="userChosen">
 <?php
 	$groupMember=gettingGroupMember($_SESSION['groupID']);
 	foreach($groupMember as $key=>$value){
 		foreach ($value as $subkey => $userID) {
 			$name= gettingUsernameFromID($userID);
-			echo "<input type='checkbox' name='userChosen[$name]' value='$userID' id='check'>$name</input>";
+			echo "<input type='checkbox' class='member' name='userChosen[$name]' value='$userID' id='check'>$name</input>";
 		}
 	}
 	//echo "<br><br><input type='submit' value='Submit'>";
-	echo "<br><br><button type='submit'>Submit</button>";
+	echo "<br><br><input class='submit' type='submit'>";
 	echo "</form>";
 
 	if(isset($_POST['userChosen'])){
