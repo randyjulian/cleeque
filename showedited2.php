@@ -1,7 +1,7 @@
 <?php
 	session_start();
-  $_SESSION['fullName']=gettingNameFromUsername($_SESSION['username']);
-  if(!isset($_SESSION['username'])){header('Location: index.php');}
+  //$_SESSION['fullName']=gettingNameFromUsername($_SESSION['username']);
+  //if(!isset($_SESSION['username'])){header('Location: index.php');}
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $server = $url["host"];
 $username = $url["user"];
@@ -47,7 +47,7 @@ $db = substr($url["path"], 1);
 <?php
 include("main_ics_processer.php");
 include("groupFunction.php");
-  $username=$_SESSION['username'];
+$username=$_SESSION['username'];
 function printEditingSchedule($array){
    echo "<form action='".$_SERVER['PHP_SELF']."' method='post' enctype='multipart/form-data'>";
    echo "<table>";
