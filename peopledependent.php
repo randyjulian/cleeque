@@ -96,6 +96,24 @@ input.member[type=checkbox] select{
 	font-family: "Roboto";
 
 }
+input.return[type=submit] {
+    width: 10%;
+    background-color: white;
+    color: red;
+    padding: 6px 10px;
+    border: 1px solid red;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+input.return[type=submit]:hover {
+    background-color: red;
+    transition: 0.2s;
+    color: white;
+}
 </style>
 
 <br><br><p id="selectmember">Select the members:
