@@ -187,7 +187,7 @@ input.button[type=submit]:hover {
 </form>
 </div>
 
-    <div class="footerSignup">
+    <div class="footer">
         <p style="text-align: left;"> &copy Cleeque 2016</p>
     </div>
 

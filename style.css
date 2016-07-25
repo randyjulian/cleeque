@@ -136,6 +136,7 @@ tr{
 
 .mainSignup{
 	width: 100%;
+	height: 100%
 	background-color: white;
 	display: block;
 	clear: both;
@@ -202,14 +203,6 @@ tr{
 .footer{
 	width: 100%;
 	height: 40px;
-	clear: both;
-	background-color: #3498db;
-	display: block;
-	margin: 0px;
-}
-.footerSignup{
-	width: 100%;
-	height: 100%;
 	clear: both;
 	background-color: #3498db;
 	display: block;
