@@ -29,7 +29,7 @@
 input.newgroup[type=text], select {
     width: 20%;
     padding: 6px 10px;
-    margin: 8px 8px;
+    margin-right: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -39,7 +39,7 @@ input.newgroup[type=text], select {
 
 
 input.newgroupsubmit[type=submit] {
-    width: 10%;
+    width: 20%;
     background-color: white;
     color: #3498db;
     padding: 6px 10px;
