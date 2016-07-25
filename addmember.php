@@ -15,7 +15,7 @@ if (!isset($_POST['username'])) {
 	//$error=true;
 	} else{
 		if($_POST['username']==''){
-			echo "<script> alert('No name is input!')</script>;";
+			echo "<script> alert('No name is input!')</script>";
 		} else {
 			$usernameAdded=$_POST['username'];
 			$useridNotExist=checkingUsernameExistInUserid($usernameAdded);
@@ -25,8 +25,8 @@ if (!isset($_POST['username'])) {
 			addingGroupMember($_SESSION['groupID'],$usernameAdded);
 			}
 		}else {
-			echo "<script>alert('Username input does not exist')</script>";
-			//echo $_SESSION['groupID'];
+			echo "<script> alert('Username is not found!')</script>";
+			echo $_SESSION['groupID'];
 		}
 	}
 }
