@@ -10,6 +10,26 @@ $_SESSION['groupID']=$_POST['groupNameSelected'];
 		header("Location: loginPage.php");
 	}
 }
+
+if (!isset($_POST['username'])) {
+	//$error=true;
+	} else{
+		if($_POST['username']==''){
+			echo "<script> alert('No name is input!')</script>;";
+		} else {
+			$usernameAdded=$_POST['username'];
+			$useridNotExist=checkingUsernameExistInUserid($usernameAdded);
+			if(!$useridNotExist){
+				$userNotInGroup=checkingUsernameExistInGroup($_SESSION['groupID'],$usernameAdded);
+				if(!$userNotInGroup){
+			addingGroupMember($_SESSION['groupID'],$usernameAdded);
+			}
+		}else {
+			echo "<script>alert('Username input doesn't exist')</script>;";
+			//echo $_SESSION['groupID'];
+		}
+	}
+}
 ?>
 <!DOCTYPE html>
 <html>
