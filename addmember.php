@@ -77,6 +77,24 @@ $_SESSION['groupID']=$_POST['groupNameSelected'];
     background-color: #2b3856;
     transition: 0.2s;
 	}
+
+	input.peopledependent[type=submit],select {
+    width: 40%;
+    background-color: #3498db;
+    color: white;
+    display: block;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 15px;
+	}
+	input.peopledependent[type=submit]:hover {
+    background-color: #2b3856;
+    transition: 0.2s;
+	}
 </style>
 <form action= '<?php $_SERVER['PHP_SELF']?>' method='POST'>
 	<p id="addmember"  style="text-align: center;">Add Group Member: </p><input class="addmember"  style="margin: auto;" type ='text' name='username' placeholder='Username'> <br>
@@ -118,6 +136,12 @@ foreach ($groupMemberArray as $key => $value) {
 }
 printTableArray($freeTimeArray);
 ?>
+
+<form action="peopledependent.php" method='POST'>
+	<p id="addmember"  style="text-align: center;">
+	<input  style="margin: auto;" class="peopledependent" type='submit' name='submit' value='Find common free slot for selected users!'><br>
+</form>
+
 <h2>Click <a href="peopledependent.php">here</a> to get the schedule for selected users only</h2>
 
 </body>
