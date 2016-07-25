@@ -38,7 +38,7 @@ $_SESSION['groupID']=$_POST['groupNameSelected'];
 		<div class="mainHeadergroup">
 			<h1 id="welcomeHeader"><?php echo gettingGroupNameFromID($_SESSION['groupID']);?></h1>
 			<h6 id="welcomeHeaderFullName">The current group ID is <?php echo $_SESSION['groupID'];?></h6>
-			<a href="exitGroup.php" id="exitGroupButton">Exit This Group</p>
+			<a href="exitGroup.php" id="exitGroupButton">Exit This Group</a>
 		</div>
 		<div class="showingMembers" style="margin: 0;">
 			<p>Members</p>
