@@ -46,7 +46,7 @@ try {
     $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // sql to insert data
-    $sql = "INSERT INTO userid(username, password, email,fullname)
+    $sql = "INSERT INTO userid(username, password, email,name)
     VALUES ('$name','$userpassword','$email','$fullname')";
 
     // use exec() because no results are returned
