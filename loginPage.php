@@ -24,6 +24,41 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 </head>
 <body>
+
+<style>/* FOR LoginPage PAGE*/
+input.newgroup[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+
+input.newgroupsubmit[type=submit] {
+    width: 10%;
+    background-color: white;
+    color: #3498db;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+input.newgroupsubmit[type=submit]:hover {
+    background-color: #2b3856;
+    transition: 0.2s;
+    color: white;
+}
+</style>
+
 	<div class="modal">
 		<div class="modal-content">
 			<div class="modalHeader">
@@ -120,38 +155,6 @@
 		<p style="text-align: left;"> &copy Cleeque 2016</p>
 	</div>
 
-<style>/* FOR LoginPage PAGE*/
-input.newgroup[type=text], select {
-    width: 20%;
-    padding: 12px 20px;
-    margin: 8px 8px;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: "Roboto";
-    font-size: 15px;
-}
 
-
-input.button[type=submit] {
-    width: 10%;
-    background-color: white;
-    color: #3498db;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: "Roboto";
-    font-size: 15px;
-}
-
-input.button[type=submit]:hover {
-    background-color: #2b3856;
-    transition: 0.2s;
-    color: white;
-}
-</style>
 </body>
 </html>
