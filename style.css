@@ -800,10 +800,10 @@ tr{
 
 .showTableDiv{
 	overflow-x: scroll;
-	padding-bottom: 10px;
+	padding: 10px;
 }
 
 #min {
 
-	font-size: 50px;
+	font-size: 40px;
 }

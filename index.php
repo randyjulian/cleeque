@@ -142,7 +142,7 @@ try {
 				<p id="tagline">Arranging a meeting has never been this easy</p>
 			</div>
 			<div class="slide" id="second">
-				<p style="font-color: white" id='min'>Find your group's common timeslot in less than 5 minutes!</p>
+				<p style="font-color: white" id='min'>Find your group's common timeslot in less than 3 minutes!</p>
 			</div> 
 			<div class="slide" id="first">	
 				<p><span style="font-size: 150px" >CLEEQUE</span></p>
