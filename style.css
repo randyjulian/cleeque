@@ -798,3 +798,8 @@ tr{
 	font-size: 20px;
 	margin-left: 8px;
 }
+
+.showTableDiv{
+	overflow-x: scroll;
+	padding-bottom: 10px;
+}
