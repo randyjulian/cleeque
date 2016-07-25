@@ -3,9 +3,9 @@
 	include("groupFunction.php");
 	include("main_ics_processer.php");
 	include("databaseconnection.php");
-	if(!isset($_SESSION['username'])){header('Location: index.php');}
+	//if(!isset($_SESSION['username'])){header('Location: index.php');}
 	$username=$_SESSION['username'];
-	$_SESSION['fullName']=gettingNameFromUsername($_SESSION['username']);
+	//$_SESSION['fullName']=gettingNameFromUsername($_SESSION['username']);
 	
 ?>
 <!DOCTYPE html>
