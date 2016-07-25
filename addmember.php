@@ -97,8 +97,7 @@ if (!isset($_POST['username'])) {
     background-color: white;
     color: black;
     display: block;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 6px 10px;
     margin-top: -40px;
     border: none;
     border-radius: 7px;
@@ -108,7 +107,7 @@ if (!isset($_POST['username'])) {
 	}
 	
 	input.peopledependent[type=submit]:hover {
-    background-color: #696969;
+    background-color: red;
     color: white;
     transition: 0.2s;
 	}
