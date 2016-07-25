@@ -88,7 +88,7 @@ if (!isset($_POST['username'])) {
 	}
 
 	input.quitgroup[type=submit]:hover {
-    background-color: #2b3856;
+    background-color: red;
     transition: 0.2s;
 	}
 
@@ -107,7 +107,7 @@ if (!isset($_POST['username'])) {
 	}
 	
 	input.peopledependent[type=submit]:hover {
-    background-color: red;
+    background-color: #2b3856;
     color: white;
     transition: 0.2s;
 	}
