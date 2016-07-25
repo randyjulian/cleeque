@@ -87,8 +87,6 @@ input.newgroupsubmit[type=submit]:hover {
 			<a id="usernameNav" style="text-decoration:none;" href="logout.php">Log Out</a>
 			<p id="responsiveNavButton"> &#9776; Menu</p>
 		</div>
-		
-
 	</div>
 	<div class="main">
 		<div class="mainHeaderdashboard">
@@ -153,7 +151,6 @@ input.newgroupsubmit[type=submit]:hover {
 			<p style="text-align: left;"> &copy Cleeque 2016</p>
 		</div>
 	</div>
-</div>
 
 
 
