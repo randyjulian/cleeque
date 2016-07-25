@@ -23,9 +23,10 @@ if (!isset($_POST['username'])) {
 				$userNotInGroup=checkingUsernameExistInGroup($_SESSION['groupID'],$usernameAdded);
 				if(!$userNotInGroup){
 			addingGroupMember($_SESSION['groupID'],$usernameAdded);
+			echo "<p>$usernameAdded</p>";
 			}
 		}else {
-			echo "<script>alert('Username input doesn't exist')</script>;";
+			echo "<script>alert('Username input doesn't exist')</script>";
 			//echo $_SESSION['groupID'];
 		}
 	}
@@ -121,26 +122,6 @@ if (!isset($_POST['username'])) {
 	<p id="addmember"  style="text-align: center;">Add Group Member: </p><input class="addmember"  style="margin: auto;" type ='text' name='username' placeholder='Username'> <br>
 	<input  style="margin: auto;" class="submit" type='submit' name='submit' value='Add Member'><br>
 </form>
-<?php
-if (!isset($_POST['username'])) {
-	//$error=true;
-	} else{
-		if($_POST['username']==''){
-			echo "No name is input!<br>";
-		} else {
-			$usernameAdded=$_POST['username'];
-			$useridNotExist=checkingUsernameExistInUserid($usernameAdded);
-			if(!$useridNotExist){
-				$userNotInGroup=checkingUsernameExistInGroup($_SESSION['groupID'],$usernameAdded);
-				if(!$userNotInGroup){
-			addingGroupMember($_SESSION['groupID'],$usernameAdded);
-			echo "$usernameAdded is added!<br>";
-		}
-		}
-			//echo $_SESSION['groupID'];
-	}
-}
-?>
 <?php
 //Initialise the free time array
 $groupMemberArray=gettingGroupMember($_SESSION['groupID']);
