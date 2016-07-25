@@ -788,3 +788,8 @@ tr{
 .description{
 	padding: 0px 40px;
 }
+
+#selectmember{
+	font-family: "Montserrat";
+	font-size: 20px;
+}

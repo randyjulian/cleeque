@@ -76,7 +76,7 @@
 <style>
 input.submit[type=submit] {
     width: 10%;
-    background-color: #3498db;;
+    background-color: #3498db;
     color: white;
     padding: 6px 10px;
     margin: 8px 0;
@@ -92,18 +92,13 @@ input.submit[type=submit]:hover {
     transition: 0.2s;
     color: white;
 }
+input.member[type=checkbox] select{
+	font-family: "Roboto";
 
-input.member ui
-{
-	background-color: blue;
-}
-
-.ui-helper-hidden-accessible {
-	background-color: red;
 }
 </style>
 
-<br><br><p>Select the members:
+<br><br><p id="selectmember">Select the members:
 <form action="<?php echo $_SERVER['PHP_SELF'] ;?>" method="post" name="userChosen">
 <?php
 	$groupMember=gettingGroupMember($_SESSION['groupID']);
