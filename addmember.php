@@ -132,7 +132,7 @@ if (!isset($_POST['username'])) {
 			<h6 id="welcomeHeaderFullName">Group ID :<?php echo $_SESSION['groupID'];?></h6>
 			<form action="exitGroup.php" method='POST'>
 				<p id="addmember"  style="text-align: center;">
-				<input  style="margin: auto;" class="quitgroup" type='submit' name='submit' value='Quit Group'><br>
+				<input  style="margin-left: auto; margin-right: auto;" class="quitgroup" type='submit' name='submit' value='Quit Group'><br>
 			</form>
 		</div>
 		<div class="showingMembers" style="margin: 0;">
