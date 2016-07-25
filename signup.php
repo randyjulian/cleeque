@@ -180,7 +180,7 @@ input.button[type=submit]:hover {
     <br>
     <input class= "text" type="text" style="margin: auto;" name="fullname" value= "<?php if (isset($_GET['fullname'])){ echo $_GET['fullname'];} ?>" placeholder="Full Name">
     <?php 
-    if (isset($_GET['fullnamed'])) {echo "Please input your full name";}?>
+    if (isset($_GET['fullnamed'])) {echo "Please input your full name";}?><br>
 
 
  
