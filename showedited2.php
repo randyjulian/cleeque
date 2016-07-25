@@ -56,6 +56,7 @@ input.submit[type=submit] {
     cursor: pointer;
     font-family: "Roboto";
     font-size: 15px;
+    min-width: 130px;
 }
 
 input.submit[type=submit]:hover {
@@ -75,6 +76,7 @@ input.return[type=submit] {
     cursor: pointer;
     font-family: "Roboto";
     font-size: 15px;
+    min-width: 130px;
 }
 
 input.return[type=submit]:hover {
@@ -94,11 +96,13 @@ input.reset[type=submit] {
     cursor: pointer;
     font-family: "Roboto";
     font-size: 15px;
+    min-width: 130px;
 }
 
 input.reset[type=submit]:hover {
     background-color: #EB9100;
     transition: 0.2s;
+    min-width: 130px;
     color: white;
 }
 
