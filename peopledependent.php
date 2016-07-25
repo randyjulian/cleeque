@@ -6,6 +6,7 @@
 	if(!isset($_SESSION['username'])){header('Location: index.php');}
 	$username=$_SESSION['username'];
 	$_SESSION['fullName']=gettingNameFromUsername($_SESSION['username']);
+	$groupID=$_SESSION['groupID'];
 	
 ?>
 <!DOCTYPE html>
@@ -130,9 +131,9 @@ input.return[type=submit]:hover {
 	//echo "<br><br><input type='submit' value='Submit'>";
 	echo "<br><br><input class='submit' type='submit'>";
 	echo "</form>";
-
+	$_SESSION['groupID']=$groupID;
 	?>
-<form action="loginPage.php" method="POST">
+<form action="addmember.php" method="POST">
         <input class= "return" type="submit" name="submit" value="Cancel">
     </form>
 	<?php 
