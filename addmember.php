@@ -138,20 +138,7 @@ if (!isset($_POST['username'])) {
 				<input  style="margin-left: auto; margin-right: auto;" class="quitgroup" type='submit' name='submit' value='Quit Group'><br>
 			</form>
 		</div>
-		<div class="showingMembers" style="margin: 0;">
-			<p>Members</p>
-			<?php
-				printingGroupMember($_SESSION['groupID']);
-			?>
-		</div>
-</div>
-
-
-<form action= '<?php $_SERVER['PHP_SELF']?>' method='POST'>
-	<p id="addmember"  style="text-align: center;">Add Group Member: </p><input class="addmember"  style="margin: auto;" type ='text' name='username' placeholder='Username'> <br>
-	<input  style="margin: auto;" class="submit" type='submit' name='submit' value='Add Member'><br>
-</form>
-<div class="showTableDiv">
+		<div class="showTableDiv">
 <?php
 //Initialise the free time array
 $groupMemberArray=gettingGroupMember($_SESSION['groupID']);
@@ -169,6 +156,20 @@ foreach ($groupMemberArray as $key => $value) {
 printTableArray($freeTimeArray);
 ?>
 </div>
+		<div class="showingMembers" style="margin: 0;">
+			<p>Members</p>
+			<?php
+				printingGroupMember($_SESSION['groupID']);
+			?>
+		</div>
+</div>
+
+
+<form action= '<?php $_SERVER['PHP_SELF']?>' method='POST'>
+	<p id="addmember"  style="text-align: center;">Add Group Member: </p><input class="addmember"  style="margin: auto;" type ='text' name='username' placeholder='Username'> <br>
+	<input  style="margin: auto;" class="submit" type='submit' name='submit' value='Add Member'><br>
+</form>
+
 
 <form action="peopledependent.php" method='POST'>
 	<p id="addmember"  style="text-align: center;">
