@@ -69,6 +69,7 @@ input.return[type=submit] {
     background-color: white;
     color: red;
     padding: 6px 10px;
+    border: 1px solid red;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
