@@ -81,7 +81,28 @@ input.return[type=submit]:hover {
     background-color: red;
     transition: 0.2s;
     color: white;
-}</style>
+}
+
+input.reset[type=submit] {
+    width: 10%;
+    background-color: white;
+    color: #EB9100;
+    padding: 6px 10px;
+    border: 1px solid #EB9100;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+input.reset[type=submit]:hover {
+    background-color: #EB9100;
+    transition: 0.2s;
+    color: white;
+}
+
+</style>
 
 
 <?php
@@ -170,6 +191,11 @@ function printEditingSchedule($array){
       $stmt->execute();
       $_SESSION['form']=true;
     ?>
+    
+    <form action="reset.php" method="POST">
+        <input class= "reset" type="submit" name="submit" value="Reset Timetable">
+    </form>
+
     <form action="loginPage.php" method="POST">
         <input class= "return" type="submit" name="submit" value="Cancel">
     </form>
