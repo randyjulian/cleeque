@@ -1,7 +1,6 @@
 html{
 	min-width: 860px;
 	height: 100%;
-	overflow-x: hidden;
 }
 body{
 	margin:0px;
@@ -81,7 +80,6 @@ tr{
 	transition: linear 0.1s;
 	cursor: pointer;
 	padding: 2px 5px 2px 5px;
-	text-decoration: none;
 }
 .mainMenu>p:hover, #responsiveNavButton:hover{
 	/*border-bottom: solid white 2px; */
@@ -89,11 +87,6 @@ tr{
 	padding: 2px 5px 2px 5px;
 }
 
-.mainMenu p a{
-	text-decoration: none;
-	color: white;
-	cursor: pointer;
-}
 
 #login, #usernameNav{
 	margin-top: 11px;
@@ -133,7 +126,7 @@ tr{
 	background-color: white;
 	display: block;
 	clear: both;
-	padding-top: 50px;
+	overflow: hidden;
 }
 .mainGroup{
 	width: 100%;
@@ -307,7 +300,6 @@ tr{
 	margin-left: 50px;
 	margin-top: 2px;
 	position: relative;
-	cursor: pointer;
 }
 
 .sliderController{
@@ -609,7 +601,7 @@ tr{
 #welcomeHeader{
 	margin-bottom: 0px;
 	text-align: center;
-	margin-top: 0px;
+	margin-top: 50px;
 	padding-top: 50px;
 	font-family: "Montserrat";
 }
@@ -712,11 +704,6 @@ tr{
 	background-color: #2b3856;
 	border: 1px white solid;
 }
-
-.editTimetable{
-	overflow-x: scroll;
-	padding: 25px;
-}
 .showingGroup{
 	background-color: #3498db;
 	padding-left: 30px;
@@ -779,8 +766,4 @@ tr{
 #addmember {
 	font-family: "Montserrat";
 	font-size: 25px;
-}
-
-.description{
-	padding: 0px 40px;
 }
