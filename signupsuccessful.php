@@ -49,8 +49,7 @@ try {
     // use exec() because no results are returned
     $database->exec($sql);
     echo "<script> 
-    alert('You have been registered successfully!');
-    window.location.href='login.php';
+    window.location.href='index.php';
     </script>";
     }
 
