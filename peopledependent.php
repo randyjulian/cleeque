@@ -73,7 +73,8 @@
 		</div>
 	</div>
 
-<style>input.submit[type=submit] {
+<style>
+input.submit[type=submit] {
     width: 10%;
     background-color: #3498db;;
     color: white;
@@ -90,7 +91,8 @@ input.submit[type=submit]:hover {
     background-color: #2b3856;
     transition: 0.2s;
     color: white;
-}</style>
+}
+</style>
 
 <br><br><p>Select the members:
 <form action="<?php echo $_SERVER['PHP_SELF'] ;?>" method="post" name="userChosen">
@@ -103,7 +105,7 @@ input.submit[type=submit]:hover {
 		}
 	}
 	//echo "<br><br><input type='submit' value='Submit'>";
-	echo "<br><br><button class='submit' type='submit'>Submit</button>";
+	echo "<br><br><input class='submit' type='submit'>Submit</button>";
 	echo "</form>";
 
 	if(isset($_POST['userChosen'])){
