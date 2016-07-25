@@ -79,7 +79,7 @@ input.submit[type=submit] {
     background-color: #3498db;
     color: white;
     padding: 6px 10px;
-    margin: 8px 0;
+    margin: 8px 8px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -105,7 +105,7 @@ input.member[type=checkbox] select{
 	foreach($groupMember as $key=>$value){
 		foreach ($value as $subkey => $userID) {
 			$name= gettingUsernameFromID($userID);
-			echo "<input type='checkbox' class='member' name='userChosen[$name]' value='$userID' id='check'>$name</input>";
+			echo "<input type='checkbox' class='member' name='userChosen[$name]' value='$userID' id='check'>$name</input><br>";
 		}
 	}
 	//echo "<br><br><input type='submit' value='Submit'>";
@@ -124,10 +124,10 @@ input.member[type=checkbox] select{
 
 		}
 	} else {
-		echo "<br><h2>Please choose some users!</h2>";
+		echo "<br id='selectmember'>Please choose some users!";
 		exit();
 	}
-	echo "<h1> Common Free Time For Selected Users</h1>";
+	echo "<p id='selectedmember'> Common Free Time For Selected Users";
 	printTableArray($freeTimeArray);
 
 	
