@@ -80,6 +80,7 @@ tr{
 	transition: linear 0.1s;
 	cursor: pointer;
 	padding: 2px 5px 2px 5px;
+	text-decoration: none;
 }
 .mainMenu>p:hover, #responsiveNavButton:hover{
 	/*border-bottom: solid white 2px; */
@@ -87,6 +88,11 @@ tr{
 	padding: 2px 5px 2px 5px;
 }
 
+.mainMenu p a{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
 
 #login, #usernameNav{
 	margin-top: 11px;
