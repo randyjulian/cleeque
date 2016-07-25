@@ -137,7 +137,6 @@ $(document).ready(function(){
 				console.log(obj.message);
 				if(obj.message=='ok'){
 					window.location.href="loginPage.php";
-					alert("Login Successfully");
 					$_SESSION['username']=dataObject['username'];
 				} else {
 					$("#errorMessage").text(obj.message);

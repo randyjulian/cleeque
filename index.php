@@ -79,7 +79,7 @@ try {
     		$results=$records->fetch(PDO::FETCH_ASSOC);
     		if(count($results)>0 && password_verify($password, $results['password'])){
     			$_SESSION['username']=$results['username'];
-    			echo "<script> alert('Login successful!'); window.location.href='dashboard.php';</script>";
+    			echo "<script>window.location.href='dashboard.php';</script>";
     			echo $_SESSION['username'];
     		} else {
     			$errMessage.="Username and Password are not found!<br>";
