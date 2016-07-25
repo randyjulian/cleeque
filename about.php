@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
-	<title>Cleeque | Dashboard</title>
+	<title>Cleeque | About</title>
 	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 	<meta name="theme-color" content="#ffffff">
 	<link type="text/css" rel="stylesheet" href="style.css"></link>
@@ -62,6 +62,7 @@
 	</div>
 	<div class="main" style="padding-top:50px;">
 		<div class="description">
+		<img src="http://i.imgur.com/YmE8ECm.png" style="margin-left: auto;margin-right: auto;">
 			<p id="descriptionHeader">What's this project?</p>
 			<p id="descriptionContent">Cleeque aims to facilitate meet up arrangement so that work can be more productive and friends would be more bonded. This web application is designed especially for NUS students but with a big plan to extend beyond the NUS community. As such, currently, the website only supports the iCalendar file downloaded from <a href="https://nusmods.com/" style="text-decoration:none;">nusmods.com</a>.
 			<br>
