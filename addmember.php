@@ -28,7 +28,6 @@ if (!isset($_POST['username'])) {
 			}
 		}else {
 			echo "<script> alert('Username is not found!')</script>";
-			echo $_SESSION['groupID'];
 		}
 	}
 }
