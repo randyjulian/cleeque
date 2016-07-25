@@ -124,10 +124,10 @@ input.member[type=checkbox] select{
 
 		}
 	} else {
-		echo "<br id='selectmember'>Please choose some users!";
+		echo "<p id='selectmember'>Please choose some users!</p>";
 		exit();
 	}
-	echo "<p id='selectedmember'> Common Free Time For Selected Users";
+	echo "<p id='selectmember'> Common Free Time For Selected Users</p>";
 	printTableArray($freeTimeArray);
 
 	
