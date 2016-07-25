@@ -704,6 +704,18 @@ tr{
 	background-color: #2b3856;
 	border: 1px white solid;
 }
+<<<<<<< HEAD
+=======
+
+.editTimetable{
+	padding: 25px;
+}
+
+.showingTableToEdit{
+	overflow-x: scroll;
+	margin-bottom: 15px;
+}
+>>>>>>> origin/master
 .showingGroup{
 	background-color: #3498db;
 	padding-left: 30px;
