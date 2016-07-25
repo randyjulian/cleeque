@@ -102,7 +102,7 @@ input.return[type=submit] {
     color: red;
     padding: 6px 10px;
     border: 1px solid red;
-    margin: 8px 0;
+    margin: 8px 20px;
     border-radius: 4px;
     cursor: pointer;
     font-family: "Roboto";
@@ -113,6 +113,7 @@ input.return[type=submit]:hover {
     background-color: red;
     transition: 0.2s;
     color: white;
+    margin-left: 20px;
 }
 </style>
 
