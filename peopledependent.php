@@ -73,8 +73,26 @@
 		</div>
 	</div>
 
+<style>input.submit[type=submit] {
+    width: 10%;
+    background-color: #3498db;;
+    color: white;
+    padding: 6px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 15px;
+}
 
-<br><p>Select the members:
+input.submit[type=submit]:hover {
+    background-color: #2b3856;
+    transition: 0.2s;
+    color: white;
+}</style>
+
+<br><br><p>Select the members:
 <form action="<?php echo $_SERVER['PHP_SELF'] ;?>" method="post" name="userChosen">
 <?php
 	$groupMember=gettingGroupMember($_SESSION['groupID']);
@@ -85,7 +103,7 @@
 		}
 	}
 	//echo "<br><br><input type='submit' value='Submit'>";
-	echo "<br><br><button type='submit'>Submit</button>";
+	echo "<br><br><button class='submit' type='submit'>Submit</button>";
 	echo "</form>";
 
 	if(isset($_POST['userChosen'])){
