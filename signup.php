@@ -168,7 +168,6 @@ input.button[type=submit]:hover {
 	if (isset($_GET['named'])) {echo "Please input your name";}
 	else if (isset($_GET['exist'])) { echo  "This username has already existed.";}?><br>
 <input class="pass" type="password" style="margin: auto;" name="password" placeholder="Password"><?php if (isset($_GET['pass'])) {echo "Please input your password";}?><br>
-
 <input class="text" type="text" name="email" style="margin: auto;" value= "<?php if (isset($_GET['email'])){ echo $_GET['email'];} ?>" placeholder="Email">
 	<?php 
 	if (isset($_GET['emailed'])) {
@@ -178,7 +177,10 @@ input.button[type=submit]:hover {
      echo "Invalid email format"; 
     }
     ?>
-<br>
+    <br>
+    <input class= "text" type="text" style="margin: auto;" name="fullname" value= "<?php if (isset($_GET['fullname'])){ echo $_GET['fullname'];} ?>" placeholder="Full Name">
+    <?php 
+    if (isset($_GET['fullnamed'])) {echo "Please input your full name";}?>
 
 
  

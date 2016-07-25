@@ -9,6 +9,7 @@ $name= $_POST['name'];
 // create passwordhash
 $userpassword = password_hash($_POST['password'], PASSWORD_DEFAULT);  
 $email = $_POST['email'];
+$fullname=$_POST['fullname'];
 
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $server = $url["host"];
@@ -29,6 +30,8 @@ if (isset($_POST['email'])==0 || $_POST['email']==NULL){
 	$location .= '&emailed=1'.'&name='.$name;$error = true;}
 if (!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){
   $location .= '&emailformaterror=1&email='.$email.'&name='.$name;$error=true;}
+if (isset($_POST['fullname'])==false || $_POST['fullname']==NULL){
+  $location = $location.'&fullnamed=1&name='.$name; $error = true;}
 
 // if there is error then the header will be run, else run the pdo code instead
 if ($error == true) {
@@ -43,8 +46,8 @@ try {
     $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // sql to insert data
-    $sql = "INSERT INTO userid(username, password, email)
-    VALUES ('$name','$userpassword','$email')";
+    $sql = "INSERT INTO userid(username, password, email,fullname)
+    VALUES ('$name','$userpassword','$email','$fullname')";
 
     // use exec() because no results are returned
     $database->exec($sql);
