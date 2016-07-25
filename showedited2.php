@@ -1,7 +1,7 @@
 <?php
 	session_start();
   //$_SESSION['fullName']=gettingNameFromUsername($_SESSION['username']);
-  //if(!isset($_SESSION['username'])){header('Location: index.php');}
+  if(!isset($_SESSION['username'])){header('Location: index.php');}
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $server = $url["host"];
 $username = $url["user"];
