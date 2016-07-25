@@ -93,9 +93,13 @@ input.submit[type=submit]:hover {
     color: white;
 }
 
-input.member
+input.member ui
 {
 	background-color: blue;
+}
+
+.ui-helper-hidden-accessible {
+	background-color: red;
 }
 </style>
 
