@@ -118,7 +118,7 @@ try {
 </div>
 
 <style>/* FOR SIGNUP PAGE*/
-.form1 input[type=text].form1, select {
+input.text[type=text], select {
     width: 30%;
     padding: 12px 20px;
     margin: 8px 8px;
@@ -129,7 +129,7 @@ try {
     font-family: "Roboto";
     font-size: 15px;
 }
-input.form2[type=password], select {
+input.pass[type=password], select {
     width: 30%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -141,7 +141,7 @@ input.form2[type=password], select {
     font-size: 15px;
 }
 
-input[type=submit] {
+input.button[type=submit] {
     width: 30%;
     background-color: #3498db;
     color: white;
@@ -154,7 +154,7 @@ input[type=submit] {
     font-size: 15px;
 }
 
-input[type=submit]:hover {
+input.button[type=submit]:hover {
     background-color: #2b3856;
     transition: 0.2s;
 }
@@ -163,13 +163,13 @@ input[type=submit]:hover {
 <div class="mainSignup" style="text-align: center; padding-top: 70px; ">
 <p id="register"> Register</p>
 <form action= "signupsuccessful.php" method="post">
-<input class= "form1" type="text" style="margin: auto;" name="name" value= "<?php if (isset($_GET['name'])){ echo $_GET['name'];} ?>" placeholder="Username">
+<input class= "text" type="text" style="margin: auto;" name="name" value= "<?php if (isset($_GET['name'])){ echo $_GET['name'];} ?>" placeholder="Username">
 <?php 
 	if (isset($_GET['named'])) {echo "Please input your name";}
 	else if (isset($_GET['exist'])) { echo  "This username has already existed.";}?><br>
-<input class="form2" type="password" style="margin: auto;" name="password" placeholder="Password"><?php if (isset($_GET['pass'])) {echo "Please input your password";}?><br>
+<input class="pass" type="password" style="margin: auto;" name="password" placeholder="Password"><?php if (isset($_GET['pass'])) {echo "Please input your password";}?><br>
 
-<input type="text" name="email" style="margin: auto;" value= "<?php if (isset($_GET['email'])){ echo $_GET['email'];} ?>" placeholder="Email">
+<input class="text" type="text" name="email" style="margin: auto;" value= "<?php if (isset($_GET['email'])){ echo $_GET['email'];} ?>" placeholder="Email">
 	<?php 
 	if (isset($_GET['emailed'])) {
 		echo "Please input your email ";
@@ -183,11 +183,13 @@ input[type=submit]:hover {
 
  
 
-<input type="submit">
+<input class="button" type="submit">
 </form>
 </div>
 
-
+    <div class="footerSignup">
+        <p style="text-align: left;"> &copy Cleeque 2016</p>
+    </div>
 
 
 
