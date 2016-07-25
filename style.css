@@ -818,3 +818,12 @@ tr{
 #selected {
 	background-color: #3498db
 }
+
+#descriptionHeader {
+	font-family: "Montserrat";
+	font-size: 30px;
+}
+#descriptionContent {
+	font-family: "Montserrat";
+	font-size: 20px;
+}
