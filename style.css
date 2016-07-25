@@ -714,8 +714,12 @@ tr{
 }
 
 .editTimetable{
-	overflow-x: scroll;
 	padding: 25px;
+	margin-bottom: 10px;
+}
+
+.showingTableToEdit{
+	overflow-x: scroll;
 }
 .showingGroup{
 	background-color: #3498db;

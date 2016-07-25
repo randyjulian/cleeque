@@ -50,6 +50,7 @@ include("groupFunction.php");
 $username=$_SESSION['username'];
 function printEditingSchedule($array){
    echo "<form action='".$_SERVER['PHP_SELF']."' method='post' enctype='multipart/form-data'>";
+   echo "<div class='showingTableToEdit'>";
    echo "<table>";
    echo "<tr>"; // start of headers
    echo "<td class='header'></td>";
@@ -73,6 +74,7 @@ function printEditingSchedule($array){
       echo "</tr>";
    }
    echo "</table>";
+   echo "</div>";
    echo "<input type='submit' value='Submit'>";
    echo "</form>";
 }  
