@@ -715,11 +715,11 @@ tr{
 
 .editTimetable{
 	padding: 25px;
-	margin-bottom: 10px;
 }
 
 .showingTableToEdit{
 	overflow-x: scroll;
+	margin-bottom: 15px;
 }
 .showingGroup{
 	background-color: #3498db;
