@@ -151,10 +151,7 @@ input.newgroupsubmit[type=submit]:hover {
 			<p style="text-align: left;"> &copy Cleeque 2016</p>
 		</div>
 	</div>
-<<<<<<< HEAD
 </div>
-=======
->>>>>>> 44df3fb968bdeefbd671b10962f9b1677c3c6d0b
 
 
 
