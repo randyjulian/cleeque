@@ -90,7 +90,12 @@ function printEditingSchedule($array){
       <p id="responsiveNavButton"> &#9776; Menu</p>
     </div>
   </div>
-  <div class="editTimetable">
+  <div class="main">
+    <div class="mainHeaderdashboard">
+      <h1 id="welcomeHeader"><?php echo $_SESSION['username'];?></h1>
+      <h6 id="welcomeHeaderFullName"><?php echo $_SESSION['fullName'];?></h6>
+    </div>
+    <div class="editTimetable">
     <?php
       if(isset($_POST['userinput']) || $_SESSION['form']==true){
         $icsArray = $_SESSION['icsArray'];
@@ -111,7 +116,6 @@ function printEditingSchedule($array){
         $result= $stmt->fetchColumn();
         if(count($result)==1){
           $icsArray = unserialize($result);
-          echo $icsArray;
         }
       }
       printEditingSchedule($icsArray);
@@ -124,6 +128,7 @@ function printEditingSchedule($array){
       $_SESSION['form']=true;
     ?>
     <a href="loginPage.php">Go Back</a>
+    </div>
   </div>
   <div class="footer">
     <p style="text-align: left;"> &copy Cleeque 2016</p>
