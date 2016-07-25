@@ -1,3 +1,8 @@
+<?php
+	session_start();
+	if(isset($_SESSION['username'])){header('Location: loginPage.php')};
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +29,7 @@
 <a href="login.php">Log in</a>
 </form> -->
 <?php
-	session_start();
+	
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $server = $url["host"];
 $username = $url["user"];
