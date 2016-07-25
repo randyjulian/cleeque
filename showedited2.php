@@ -71,7 +71,6 @@ input.return[type=submit] {
     padding: 6px 10px;
     border: 1px solid red;
     margin: 8px 0;
-    border: none;
     border-radius: 4px;
     cursor: pointer;
     font-family: "Roboto";
