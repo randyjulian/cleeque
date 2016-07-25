@@ -66,7 +66,7 @@ function printEditingSchedule($array){
          if($subvalue==0){
             echo "<td class='free'><input type='checkbox' name='userinput[$day][$subkey]' value={$day}T$subkey></td>";
          } else {
-            echo "<td class='busy'>BUSY!</td>";
+            echo "<td class='busy'>X</td>";
          }
 
       }

@@ -129,7 +129,7 @@ function printTableArray($array){
          if($subvalue==0){
             echo "<td class='free'></td>";
          } else {
-            echo "<td class='busy'>BUSY!</td>";
+            echo "<td class='busy'>X</td>";
          }
 
       }
