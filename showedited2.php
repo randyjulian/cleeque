@@ -44,6 +44,46 @@ $db = substr($url["path"], 1);
 <body> 
 </head>
 <body>
+<style>
+input.submit[type=submit] {
+    width: 10%;
+    background-color: #3498db;;
+    color: white;
+    padding: 6px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+input.submit[type=submit]:hover {
+    background-color: #2b3856;
+    transition: 0.2s;
+    color: white;
+}
+
+input.return[type=submit] {
+    width: 10%;
+    background-color: white;
+    color: red;
+    padding: 6px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+input.return[type=submit]:hover {
+    background-color: red;
+    transition: 0.2s;
+    color: white;
+}</style>
+
+
 <?php
 include("main_ics_processer.php");
 include("groupFunction.php");
@@ -75,8 +115,10 @@ function printEditingSchedule($array){
    }
    echo "</table>";
    echo "</div>";
-   echo "<input type='submit' value='Submit'>";
+   echo "<input class= 'submit' type='submit' value='Submit'>";
    echo "</form>";
+
+
 }  
 ?>
 
@@ -129,7 +171,9 @@ function printEditingSchedule($array){
       $stmt->execute();
       $_SESSION['form']=true;
     ?>
-    <a href="loginPage.php">Go Back</a>
+    <form action="loginPage.php" method="POST">
+        <input class= "return" type="submit" name="submit" value="Cancel">
+    </form>
     </div>
   </div>
   <div class="footer">
