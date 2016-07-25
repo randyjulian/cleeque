@@ -118,7 +118,6 @@ try {
 			<div class="mainMenu">
 				<p><a href="index.php">Home</a></p>
 				<p><a href="about.php">About</a></p>
-				<p><a href="contactus.php">Contact Us</a></p>
 			</div>
 			<p id="login">Sign In</p>
 			<p id="responsiveNavButton"> &#9776; Menu</p>

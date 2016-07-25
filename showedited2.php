@@ -128,7 +128,6 @@ function printEditingSchedule($array){
       <div class="mainMenu">
         <p><a href="index.php">Home</a></p>
         <p><a href="about.php">About</a></p>
-        <p><a href="contactus.php">Contact Us</a></p>
       </div>
       <a id="usernameNav" style="text-decoration:none;" href="logout.php">Log Out</a>
       <p id="responsiveNavButton"> &#9776; Menu</p>

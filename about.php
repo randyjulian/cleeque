@@ -47,7 +47,6 @@
 			<div class="mainMenu">
 				<p><a href="index.php">Home</a></p>
 				<p><a href="about.php">About</a></p>
-				<p><a href="contactus.php">Contact Us</a></p>
 			</div>
 			<?php 
 				if(isset($_SESSION['username'])){
