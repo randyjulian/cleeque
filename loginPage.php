@@ -96,8 +96,8 @@
 				listingAllGroups($_SESSION['username']);
 			?>
 			<form action="<?php $_SERVER['PHP_SELF'];?>" method="POST">
-				<p id="newGroupInput"> New Group Name: </p><input type="text" name="groupName" placeholder="Group Name" />
-				<input type="submit" name="submit" value="Create a new group">
+				<p id="newGroupInput"> New Group Name: </p><input class="newgroup" type="text" name="groupName" placeholder="Group Name" />
+				<input class= "newgroupsubmit" type="submit" name="submit" value="Create a new group">
 			</form>
 			<?php
 				if(!isset($_POST['groupName'])){
@@ -120,5 +120,38 @@
 		<p style="text-align: left;"> &copy Cleeque 2016</p>
 	</div>
 
+<style>/* FOR LoginPage PAGE*/
+input.newgroup[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+
+input.button[type=submit] {
+    width: 10%;
+    background-color: white;
+    color: #3498db;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+input.button[type=submit]:hover {
+    background-color: #2b3856;
+    transition: 0.2s;
+    color: white;
+}
+</style>
 </body>
 </html>
