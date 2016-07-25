@@ -4,6 +4,7 @@
 	<title>Cleeque | Sign Up</title>
 	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" type="text/css" href="style.css"> 
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -16,70 +17,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
-<?php
-	session_start();
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$server = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$db = substr($url["path"], 1);
-
-	$location = null;
-	$error = false;
-try {
-    $database = new PDO("mysql:host=$server;dbname=$db", $username, $password);
-    // set the PDO error mode to exception
-    $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch(PDOException $e) {
-   		if ($e -> getcode() == 23000) {
-   		echo "The username has already exist.";	
-   		}
-   		else {
-   			print($e->getMessage());
-   		}
-    
-    }
-    //NUSNET connection API
-    require_once 'LightOpenID-master/openid.php';
-	$openid= new LightOpenID("https://cleeque.herokuapp.com/index.php");
-
-	$openid->identity = 'https://openid.nus.edu.sg/';
-	$openid->required = array(
-		'contact/email',
-		'namePerson/friendly',
-		'namePerson');
-	$openid->returnUrl = 'https://cleeque.herokuapp.com/nusnetlogin.php';
-
-    if(isset($_POST['submit'])){
-    	$errMessage='';
-    	$username=trim($_POST['username']);
-    	$password=trim($_POST['password']);
-    	if($username==''){
-    		$errMessage.='Name is not filled! ';
-    	}
-    	if($password==''){
-    		$errMessage.='Password is not filled! ';
-    	}
-    	if($errMessage==''){
-    		$records= $database->prepare('SELECT id, username, password, email FROM userid WHERE username=:username');
-    		$records->bindParam(':username', $username);
-    		$records->execute();
-    		$results=$records->fetch(PDO::FETCH_ASSOC);
-    		if(count($results)>0 && password_verify($password, $results['password'])){
-    			$_SESSION['username']=$results['username'];
-    			echo "<script> alert('Login successful!'); window.location.href='dashboard.php';</script>";
-    			echo $_SESSION['username'];
-    		} else {
-    			$errMessage.="Username and Password are not found!<br>";
-    		}
-    		}
-    	}
-    	
-
-?>
-
-
 
 	<div class="modal">
 		<div class="modal-content">
@@ -104,6 +41,7 @@ try {
 	</div>
 
 
+
 <div class="navbar">
 		<img id="logo" src="http://i.imgur.com/NXXGa4e.png" height="35" width="35" style="float: left; margin-top: 6.4px;"><p id= "cleeque" style="margin-top:0px;" >  CLEEQUE</p> 
 		<div class="menu" style="float:right;">
@@ -112,7 +50,6 @@ try {
 				<p>About</p>
 				<p>Contact Us</p>
 			</div>
-			<p id="login">Sign In</p>
 			<p id="responsiveNavButton"> &#9776; Menu</p>
 		</div>
 </div>
