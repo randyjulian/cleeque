@@ -799,7 +799,7 @@ tr{
 	margin-left: 8px;
 }
 
-.showTableInAddmember{
+.showTableDiv{
 	overflow-x: scroll;
-	margin-bottom: 10px;
+	padding-bottom: 10px;
 }
