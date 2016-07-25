@@ -38,19 +38,7 @@
     <style>
     input {margin-top: 2em;}
     button {background: 'blue';
-			color: 'navy';
-			width: 0px;}
-
-	.checkbox label:before {
-    border-radius: 3px;
-}		
-
-	input.member[type=checkbox]:checked {
-    font-size: 15px;
-    color: red;
-    text-align: center;
-   
-}
+			color: 'navy';}
     </style>
 </head>
 <body>
@@ -86,7 +74,7 @@
 	</div>
 
 
-<br><br>
+<br><p>Select the members:
 <form action="<?php echo $_SERVER['PHP_SELF'] ;?>" method="post" name="userChosen">
 <?php
 	$groupMember=gettingGroupMember($_SESSION['groupID']);
