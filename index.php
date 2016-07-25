@@ -4,6 +4,15 @@
 	<title>Cleeque | Homepage</title>
 	<link rel="icon" type="image/png" href="/favicon.ico">
 	<meta name="theme-color" content="#ffffff">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<link type="text/css" rel="stylesheet" href="style.css"></link>
+	<!---Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <!--<form action="upload.php" method="post" enctype="multipart/form-data">
@@ -76,20 +85,7 @@ try {
 
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="main.js"></script>
-	<title> CLEEQUE</title>
-	<link type="text/css" rel="stylesheet" href="style.css"></link>
-	<!---Fonts-->
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-</head>
-<body>
+
 	<div class="modal">
 		<div class="modal-content">
 			<div class="modalHeader">

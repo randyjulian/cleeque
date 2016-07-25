@@ -754,3 +754,8 @@ tr{
 	transition: 0.2s;
 }
 
+#register {
+	font-family: "Montserrat";
+	font-size: 20px;
+}
+
