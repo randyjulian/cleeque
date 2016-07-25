@@ -38,7 +38,17 @@
     <style>
     input {margin-top: 2em;}
     button {background: 'blue';
-			color: 'navy';}
+			color: 'navy';
+			width: 0px;}
+	.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
     </style>
 </head>
 <body>
@@ -67,7 +77,6 @@
 			<div class="mainMenu">
 				<p><a href="index.php">Home</a></p>
 				<p><a href="about.php">About</a></p>
-				<p><a href="contactus.php">Contact Us</a></p>
 			</div>
 			<a id="usernameNav" style="text-decoration:none;" href="logout.php">Log Out</a>
 			<p id="responsiveNavButton"> &#9776; Menu</p>
