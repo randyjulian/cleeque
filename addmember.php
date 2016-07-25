@@ -23,10 +23,9 @@ if (!isset($_POST['username'])) {
 				$userNotInGroup=checkingUsernameExistInGroup($_SESSION['groupID'],$usernameAdded);
 				if(!$userNotInGroup){
 			addingGroupMember($_SESSION['groupID'],$usernameAdded);
-			echo "<p>$usernameAdded</p>";
 			}
 		}else {
-			echo "<script>alert('Username input doesn't exist')</script>";
+			echo "<script>alert('Username input does not exist')</script>";
 			//echo $_SESSION['groupID'];
 		}
 	}
@@ -41,7 +40,6 @@ if (!isset($_POST['username'])) {
 	<link rel="stylesheet" type="text/css" href="style.css"> 
 </head>
 <body>
-
 <div class="navbar">
 		<img id="logo" src="http://i.imgur.com/NXXGa4e.png" height="35" width="35" style="float: left; margin-top: 6.4px;"><p id= "cleeque" style="margin-top:0px;" >  CLEEQUE</p> 
 		<div class="menu" style="float:right;">
