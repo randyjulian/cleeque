@@ -172,7 +172,7 @@ printTableArray($freeTimeArray);
 
 
 <form action="peopledependent.php" method='POST'>
-	<p id="addmember"  style="text-align: center;">
+	<p id="selected"  style="text-align: center;">
 	<input  style="margin: auto;" class="peopledependent" type='submit' name='submit' value='Find common free slot for selected users!'><br>
 </form>
 

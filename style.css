@@ -786,7 +786,7 @@ tr{
 #addmember {
 	font-family: "Montserrat";
 	font-size: 25px;
-	background-color: #3498db; 
+
 }
 
 .description{
@@ -807,4 +807,8 @@ tr{
 #min {
 
 	font-size: 40px;
+}
+
+#selected {
+	background-color: #3498db
 }
