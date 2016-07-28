@@ -335,7 +335,7 @@ tr{
 
 .navdot{
 	position: absolute;
-	top: 650px;
+	top: 100%;
 	margin: auto;
 	float: left;
 	width: 100%;
