@@ -536,11 +536,15 @@ tr{
 		right: 0;
 		width: 120px;
 	}
+	.mainMenu p a{
+		color: inherit;
+	}
 
 	.mainMenu p{
 		margin: 0;
+		color: white;
 	}
-
+	
 	.mainMenu p:hover{
 		background-color: white;
 		color: #3498db;
@@ -837,3 +841,4 @@ tr{
 	display: block;
 	clear: both;
 	padding-top: 50px;
+}
