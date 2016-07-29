@@ -94,7 +94,7 @@ try {
 	<div class="modal">
 		<div class="modal-content">
 			<div class="modalHeader">
-				<span class="close"> X </span>
+				<span class="close"> &#10006; </span>
 				<p id="modalCleeque">CLEEQUE</p>				
 			</div>
 			<div class="modalBody">
