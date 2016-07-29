@@ -544,7 +544,7 @@ tr{
 		margin: 0;
 		color: white;
 	}
-	
+
 	.mainMenu p:hover{
 		background-color: white;
 		color: #3498db;
@@ -841,4 +841,8 @@ tr{
 	display: block;
 	clear: both;
 	padding-top: 50px;
+}
+
+.noPointer{
+	cursor: default;
 }
