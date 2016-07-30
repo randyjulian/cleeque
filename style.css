@@ -258,7 +258,7 @@ tr{
     animation-duration: 0.4s;
     padding-top: 0px;
     overflow: hidden;
-    height: 300px;
+    height: 380px;
     width: 400px;
     font-size: 13px;
     font-family: "Roboto";
@@ -385,7 +385,7 @@ tr{
 }
 
 .modalBody{
-	padding-top: 5%;
+	padding-top: 8%;
 	text-align: center;
 }
 
@@ -511,6 +511,7 @@ tr{
 }
 
 
+
 @media screen and (max-width: 680px){
 	.menu p:nth-child(-n+3){
 		display: none;
@@ -536,6 +537,7 @@ tr{
 		right: 0;
 		width: 120px;
 	}
+
 	.mainMenu p a{
 		color: inherit;
 	}
@@ -561,6 +563,7 @@ tr{
 	}
 
 }
+
 
 .mainHeader{
 	width: 100%;

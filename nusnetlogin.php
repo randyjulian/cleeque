@@ -1,8 +1,8 @@
 <?php
-	require_once 'LightOpenID-master/openid.php';
-	require 'databaseconnection.php';
-	require 'groupFunction.php';
+	include('LightOpenID-master/openid.php');
+	include("databaseconnection.php");
 	$openid= new LightOpenID("https://cleeque.herokuapp.com/nusnet.php");
+
 
 function checkingUsernameExistInUserid($usernameInput){
 	include("databaseconnection.php");
@@ -10,35 +10,39 @@ function checkingUsernameExistInUserid($usernameInput){
 	$stmt = $database -> prepare($sql);
 	$stmt->execute();
 	$count = $stmt->fetchColumn();
-	if(count($count)!= 1){
-		echo "No username found<br>";
+	if($count!= 1){
+		//echo "No username found<br>";
 		return 1;//exit();
 	} else {
-	return 0;
+		return 0;
 	}
 }
+
+
 	if($openid->mode){
 		if($openid->mode == 'cancel'){
-			echo "User has canceled authentication";
+			echo "<script> alert('User has canceled authentication');</script>";
+			header('Location:https://cleeque.herokuapp.com/');
 		} elseif ($openid->validate()){
 			$data = $openid->getAttributes();
 			$email = $data['contact/email'];
-			$username = $data['namePerson/friendly'];
+			$usernameInput = $data['namePerson/friendly'];
 			$fullName = $data['namePerson'];
-			print_r($data);
-			echo "<br>Identity: $openid->identity <br>";
+			//print_r($data);
+			//echo "<br>Identity: $openid->identity <br>";
 			session_start();
-			$_SESSION['username'] = $username;
+			$_SESSION['username'] = $usernameInput;
 			$_SESSION['fullName'] = $fullName;
 			$_SESSION['email']=$email;
 
-			if(checkingUsernameExistInUserid($username)){
-			$sql = "INSERT INTO userid(username, password, email, name)VALUES ('$username', 'NUSNET','$email', '$fullName')";
+			if(checkingUsernameExistInUserid($usernameInput)){
+			$sql = "INSERT INTO userid(username, password, email, name)VALUES ('$usernameInput', 'NUSNET','$email', '$fullName')";
     		$database->exec($sql);
-    		echo "Yeah";}
+    		echo "Yeah"
+    		;}
 
     		echo "Boo";
-			header('Location:https://cleeque.herokuapp.com/dashboard.php');
+			header('Location:https://cleeque.herokuapp.com/loginPage.php');
 		} else {
 			echo "The user hasn't logged in.";
 		}
@@ -48,14 +52,3 @@ function checkingUsernameExistInUserid($usernameInput){
 
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>NUSNET login</title>
-</head>
-<body>
-
-
-
-</body>
-</html>

@@ -108,7 +108,7 @@ try {
 		<img id="logo" src="http://i.imgur.com/NXXGa4e.png" height="35" width="35" style="float: left; margin-top: 6.4px;"><p id= "cleeque" style="margin-top:0px;" >  CLEEQUE</p> 
 		<div class="menu" style="float:right;">
 			<div class="mainMenu">
-                <p><a href="index.php">Home</a></p>
+				<p><a href="index.php">Home</a></p>
                 <p><a href="about.php">About</a></p>
 			</div>
 			<p id="login">Sign In</p>
