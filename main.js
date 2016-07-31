@@ -187,5 +187,9 @@ $(document).ready(function(){
 		window.location="index.php";
 	})
 
+	$('.groupPeopleDep').click(function(){
+		$(this).toggleClass('selected');
+	});
+
 
 });
