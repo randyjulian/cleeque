@@ -177,7 +177,7 @@ printTableArray($freeTimeArray);
 
 
 <form action= '<?php $_SERVER['PHP_SELF']?>' method='POST'>
-	<p id="addmember"  style="text-align: center;">Add Group Member: </p><input class="addmember"  style="margin: auto;" type ='text' name='username' placeholder='Username'> <br>
+	<p id="addmember"  style="text-align: center;">Add Group Member: </p><input class="addmember"  style="margin: auto;" type ='text' name='username' placeholder='Username or NUSNET ID'> <br>
 	<input  style="margin: auto;" class="submit" type='submit' name='submit' value='Add Member'><br>
 </form>
 
