@@ -125,6 +125,21 @@ if (!isset($_POST['username'])) {
 		text-align: center;
 		clear: both;
 	}
+
+	
+	.memberList{
+		background-color: white;
+		padding: 5px;
+		color: #3498db;
+		display: inline-block;
+		width: 31%;
+		max-width: 250px;
+		text-align: center;
+		border-radius: 7px;
+		border: 1px solid;
+		transition: 0.2s;
+		overflow: hidden;
+	}
 </style>
 
 <div class="navbar">
