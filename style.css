@@ -772,13 +772,6 @@ tr{
 	height: 350px;
 }
 
-.showingMembers p{
-	margin: 0;
-	font-size: 20px;
-	margin-bottom: 10px;
-
-}
-
 .groupName :hover{
 	color: navy;
 	transition: 0.2s;
@@ -848,4 +841,38 @@ tr{
 
 .noPointer{
 	cursor: default;
+}
+
+.usernameDescription{
+	font-size: 20px;
+	margin: 0;
+}
+
+.nameDescription{
+	color: #999999;
+	font-family: "Roboto";
+	font-style: italic;
+	font-size: 15px;
+	margin: 0;
+	overflow: hidden;
+}
+
+#memberHeaders{
+	margin: 0;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.memberList{
+	background-color: white;
+	padding: 5px;
+	color: #3498db;
+	display: inline-block;
+	width: 31%;
+	max-width: 250px;
+	text-align: center;
+	border-radius: 7px;
+	border: 1px solid;
+	transition: 0.2s;
+	overflow: hidden;
 }

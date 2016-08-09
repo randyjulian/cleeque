@@ -168,7 +168,7 @@ printTableArray($freeTimeArray);
 ?>
 </div>
 		<div class="showingMembers" style="margin: 0;">
-			<p>Members</p>
+			<p id="memberHeaders">Members</p>
 			<?php
 				printingGroupMember($_SESSION['groupID']);
 			?>

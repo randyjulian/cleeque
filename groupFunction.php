@@ -128,7 +128,11 @@ function printingGroupMember($groupID){
 	foreach($userArray as $key=>$value){
 		foreach($value as $subkey=>$subvalue){
 			$usernameFromID= gettingUsernameFromID($subvalue);
-		echo "<p class='groupName noPointer'> $usernameFromID</p>";
+			$name = gettingNameFromUsername($usernameFromID);
+			echo "<div class='memberList noPointer'>";
+				echo "<p class='usernameDescription'>$usernameFromID</p>";
+				echo "<p class='nameDescription'>Krittin</p>";
+			echo "</div>";
 		}
 	}
 
