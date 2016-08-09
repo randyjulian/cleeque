@@ -126,7 +126,7 @@ if (!isset($_POST['username'])) {
 		clear: both;
 	}
 
-	
+
 	.memberList{
 		background-color: white;
 		padding: 5px;
@@ -139,6 +139,27 @@ if (!isset($_POST['username'])) {
 		border: 1px solid;
 		transition: 0.2s;
 		overflow: hidden;
+	}
+
+		
+	.usernameDescription{
+		font-size: 20px;
+		margin: 0;
+	}
+
+	.nameDescription{
+		color: #999999;
+		font-family: "Roboto";
+		font-style: italic;
+		font-size: 15px;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	#memberHeaders{
+		margin: 0;
+		font-size: 20px;
+		margin-bottom: 10px;
 	}
 </style>
 
