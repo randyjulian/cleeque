@@ -131,7 +131,7 @@ function printingGroupMember($groupID){
 			$name = gettingNameFromUsername($usernameFromID);
 			echo "<div class='memberList noPointer'>";
 				echo "<p class='usernameDescription'>$usernameFromID</p>";
-				echo "<p class='nameDescription'>Krittin</p>";
+				echo "<p class='nameDescription'>$name</p>";
 			echo "</div>";
 		}
 	}
