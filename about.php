@@ -5,6 +5,17 @@
 	include("databaseconnection.php");
 	$username=$_SESSION['username'];
 	$_SESSION['fullName']=gettingNameFromUsername($_SESSION['username']);
+
+	//NUSNET connection API
+    require_once 'LightOpenID-master/openid.php';
+	$openid= new LightOpenID("https://cleeque.herokuapp.com/index.php");
+
+	$openid->identity = 'https://openid.nus.edu.sg/';
+	$openid->required = array(
+		'contact/email',
+		'namePerson/friendly',
+		'namePerson');
+	$openid->returnUrl = 'https://cleeque.herokuapp.com/nusnetlogin.php';
 	
 ?>
 <!DOCTYPE html>
@@ -30,6 +41,9 @@
 				<p id="modalCleeque">CLEEQUE</p>				
 			</div>
 			<div class="modalBody">
+				<a href='<?php echo $openid->authUrl()?>' style="text-decoration:none;"><div class="nusnetLogin">
+					<p>Login with NUSNET</p>
+				</div></a>
 				<form  method="post">
 					<input type="text" id="username" placeholder="Username"><br><br>
 					<input type="password" id="password" placeholder="Password"><br>
