@@ -133,6 +133,7 @@ input.return[type=submit]:hover {
 	cursor: pointer;
 	transition: 0.2s;
 	overflow: hidden;
+	font-family: "Montserrat";
 
 }
 
@@ -145,6 +146,10 @@ input.return[type=submit]:hover {
 	color: white;
 }
 
+.selectedForName{
+	color: #3498db ;
+}
+
 </style>
 
 <br><br><p id="selectmember">Select the members:
@@ -154,8 +159,9 @@ input.return[type=submit]:hover {
 	foreach($groupMember as $key=>$value){
 		foreach ($value as $subkey => $userID) {
 			$name= gettingUsernameFromID($userID);
+			$fullname = gettingNameFromUsername($name);
 			echo "<input type='checkbox' class='member' name='userChosen[$name]' value='$userID' id='$name' style='display:none'></input>";
-			echo "<label for='$name' class='groupPeopleDep'>$name</label>";
+			echo "<label for='$name' class='groupPeopleDep'>$name<br><span class='nameDescription' style='color:#999999'>$fullname</span></label>";
 		}
 	}
 	//echo "<br><br><input type='submit' value='Submit'>";
@@ -185,7 +191,8 @@ input.return[type=submit]:hover {
 	}
 	echo "<p id='selectmember'> Common Free Time For Selected Users</p>";
 	echo '<div class="showTableDiv">';
-	printTableArray($freeTimeArray);
+	$numberOfPeopleSubmitted = count($_POST['userChosen']);
+	printTableArray($freeTimeArray, $numberOfPeopleSubmitted);
 	echo '</div>';
 	
 

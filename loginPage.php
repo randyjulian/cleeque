@@ -113,7 +113,7 @@ input.newgroupsubmit[type=submit]:hover {
 				$result= $stmt->fetchColumn();
 				if(count($result)==1){
 				$result = unserialize($result);
-				printTableArray($result);
+				printTableArray($result,1);
 				} else {
 					echo "<p id='noTimetableError'>Please upload the timetable above!</p>";
 				}

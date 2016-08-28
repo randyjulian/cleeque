@@ -185,7 +185,7 @@ $(document).ready(function(){
 	//clicking logo to go home
 	$('#logo, #cleeque').click(function(){
 		window.location="index.php";
-	})
+	});
 
 	$('.groupPeopleDep').click(function(){
 		$(this).toggleClass('selected');

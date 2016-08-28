@@ -179,6 +179,14 @@ function gettingFilenameWithUsername($username){
 	return $stmt->fetchColumn();
 }
 
+function gettingGroupMemberNumber($groupID){
+	include('databaseconnection.php');
+	$sql = "SELECT count(*) FROM groupmember WHERE groupID = '$groupID' ";
+	$stmt = $database->prepare($sql);
+	$stmt->execute();
+	return $stmt->fetchColumn();
+}
+
 
 
 ?>

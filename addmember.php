@@ -200,7 +200,8 @@ foreach ($groupMemberArray as $key => $value) {
 		comparison($userTimeSlotArray, $freeTimeArray);
 	}
 }
-printTableArray($freeTimeArray);
+$numberOfPeople = count($groupMemberArray);
+printTableArray($freeTimeArray,$numberOfPeople);
 ?>
 </div>
 		<div class="showingMembers" style="margin: 0;">
