@@ -88,7 +88,7 @@ try {
 				<p id="modalCleeque">CLEEQUE</p>				
 			</div>
 			<div class="modalBody">
-				<a href='<?php echo $openid->authUrl()?>' style="text-decoration:none; display:none;"><div class="nusnetLogin">
+				<a href='<?php echo $openid->authUrl()?>' style="text-decoration:none;"><div class="nusnetLogin">
 					<p>Login with NUSNET</p>
 				</div></a>
 				<form  method="post">

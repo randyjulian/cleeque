@@ -135,6 +135,7 @@ tr{
 	display: block;
 	clear: both;
 	padding-top: 50px;
+	overflow: hidden;
 }
 .mainGroup{
 	width: 100%;
