@@ -161,7 +161,7 @@ input.return[type=submit]:hover {
 			$name= gettingUsernameFromID($userID);
 			$fullname = gettingNameFromUsername($name);
 			echo "<input type='checkbox' class='member' name='userChosen[$name]' value='$userID' id='$name' style='display:none'></input>";
-			echo "<label for='$name' class='groupPeopleDep'>$name<br><span class='nameDescription' style='color:#999999'>$fullname</span></label>";
+			echo "<label for='$name' class='groupPeopleDep'><p style='margin:0;'>$name</p><p class='nameDescription' style='color:#999999'>$fullname</p></label>";
 		}
 	}
 	//echo "<br><br><input type='submit' value='Submit'>";

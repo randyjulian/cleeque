@@ -93,7 +93,10 @@ input.newgroupsubmit[type=submit]:hover {
 			<h6 id="welcomeHeaderFullName"><?php echo $_SESSION['fullName'];?></h6>
 		</div>
 		<div class="uploadFile">
-			<p id="uploadFileHeader">Upload your timetable in iCalendar file or '.ics' below!</p>
+			<p id="fileDownloadHelp">Get your iCalendar file from <a href="https://nusmods.com" target="_blank" style="text-decoration: none">NUSMods</a></p> 
+			<p style="color: white;font-family: 'Montserrat'; margin-top:0;font-size:17px;display: block; text-align: center; margin-bottom: 33px">Just refer to the picture below for help!</p>
+			<img src="http://i.imgur.com/rYzz7eb.jpg"></img>
+			<p id="uploadFileHeader">Then, upload your iCalendar file (.ics) below!</p>
 			<form id="uploadForm" method="post" action="upload2.php" enctype="multipart/form-data">
 					<input type="file" class="uploadBox" id="uploadBox" name="fileToUpload" style="display:none" />
 					<label for='uploadBox' id="chooseFileButton"><strong>Choose a file to upload</strong></label>
@@ -119,7 +122,7 @@ input.newgroupsubmit[type=submit]:hover {
 				}
 				?>
 			</div>
-			<a id="editTimetableButton" href="https://cleeque.herokuapp.com/showedited2.php" style="float: center;">Edit timetable</a>
+			<a id="editTimetableButton" href="https://cleeque.herokuapp.com/showedited2.php" style="float: center;margin-top: 0px;">Edit timetable</a>
 		</div>
 		<div class="showingGroup">
 			<p>Groups</p>

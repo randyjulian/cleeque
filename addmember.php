@@ -121,7 +121,7 @@ if (!isset($_POST['username'])) {
 
 	.groupTableHeader{
 		font-family: "Montserrat";
-		font-size: 20px;
+		font-size: 25px;
 		text-align: center;
 		clear: both;
 	}
@@ -185,7 +185,8 @@ if (!isset($_POST['username'])) {
 			</form>
 		</div>
 		<div class="showTableDiv">
-			<p class="groupTableHeader">The Group's Timetable</p>
+			<p style="margin-bottom: 0;" class="groupTableHeader">The Group's Timetable</p>
+			<p style="text-align: center; margin-top: 0; font-family: 'Montserrat'; font-size:13px"">Darker slots mean more people are not available</p>
 <?php
 //Initialise the free time array
 $groupMemberArray=gettingGroupMember($_SESSION['groupID']);

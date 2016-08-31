@@ -633,12 +633,12 @@ tr{
 }
 
 .uploadFile{
-	height: 150px;
+	height: 510px;
 	background-color: #3498db;
 }
 
 #uploadFileHeader{
-	font-size: 20px;
+	font-size: 25px;
 	color: white;
 	font-family: "Montserrat";
 	text-align: center;
@@ -684,7 +684,7 @@ tr{
 .timetable p{
 	text-align: center;
 	font-family: "Montserrat";
-	font-size: 20px;
+	font-size: 25px;
 	display: block;
 	clear: both;
 
@@ -875,4 +875,31 @@ tr{
 	border: 1px solid;
 	transition: 0.2s;
 	overflow: hidden;
+}
+
+#fileDownloadHelp{
+	margin: 0;
+	color: white;
+	font-size:25px;
+	font-family: "Montserrat";
+	padding-top: 40px;
+	padding-bottom: 2px; 
+	display: block;
+	text-align: center;
+}
+
+#fileDownloadHelp a{
+	text-decoration: none;
+	color: #ffc107;
+}
+
+.uploadFile img{
+	width: 850px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 8px;
+	border: 1px;
+
+
 }
