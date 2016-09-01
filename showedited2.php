@@ -132,7 +132,7 @@ function printEditingSchedule($array){
          if($subvalue==0){
             echo "<td class='free'><input type='checkbox' name='userinput[$day][$subkey]' value={$day}T$subkey></td>";
          } else {
-            echo "<td class='busy'>X</td>";
+            echo "<td class='busy'><input type='checkbox' name='userinput[$day][$subkey]' value={$day}T$subkey checked></td>";
          }
 
       }
@@ -167,6 +167,11 @@ function printEditingSchedule($array){
     <?php
       if(isset($_POST['userinput']) || $_SESSION['form']==true){
         $icsArray = $_SESSION['icsArray'];
+        foreach($icsArray as $day=>$subkey){
+          foreach($subkey as $timeslot => $value){
+            $icsArray[$day][$timeslot]=0;
+          }
+        }
         foreach($_POST['userinput'] as $day=>$subkey){
         //echo "$day<br>";
           foreach($subkey as $timeslot => $value){

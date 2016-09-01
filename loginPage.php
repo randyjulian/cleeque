@@ -122,7 +122,7 @@ input.newgroupsubmit[type=submit]:hover {
 				}
 				?>
 			</div>
-			<a id="editTimetableButton" href="https://cleeque.herokuapp.com/showedited2.php" style="float: center;margin-top: 0px;">Edit timetable</a>
+			<a id="editTimetableButton" href="showedited2.php" style="float: center;margin-top: 0px;">Edit timetable</a>
 		</div>
 		<div class="showingGroup">
 			<p>Groups</p>
