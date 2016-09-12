@@ -109,7 +109,6 @@ $(document).ready(function(){
 		var error=false;
 		dataObject['username']= $('#username').val();
 		dataObject['password']= $('#password').val();
-		console.log(dataObject);
 		if(dataObject['username']==""){
 			$('#errorMessage').html("Please fill in username <br>");
 			error=true;

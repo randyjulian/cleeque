@@ -130,7 +130,7 @@ function printTableArray($array,$numberOfPeople){
             echo "<td class='free'></td>";
          } else {
             $opacity = (($subvalue/$numberOfPeople)*0.8) + 0.2;
-            echo "<td class='busy' style='opacity: $opacity'></td>";
+            echo "<td class='busy' style='opacity: $opacity' id='$key $subkey'></td>";
          }
 
       }
