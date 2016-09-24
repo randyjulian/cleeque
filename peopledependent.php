@@ -169,8 +169,10 @@ input.return[type=submit]:hover {
 	echo "</form>";
 	$_SESSION['groupID']=$groupID;
 	?>
-<form action="addmember.php" method="POST">
-        <input class= "return" type="submit" name="submit" value="Cancel">
+<form action="addmember.php" method="Get">
+		<input type="hidden" name="groupNameSelected" value="<?php echo $groupID; ?>">
+		<input type="hidden" name="submit" value='Go'>
+        <input class= "return" type="submit" value="Cancel">
     </form>
 	<?php 
 
