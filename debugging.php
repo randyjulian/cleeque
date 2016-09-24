@@ -1,8 +1,6 @@
 <?php
 	include('databaseconnection.php');
-	$sql= "SELECT * FROM groupmember "; 
-	$stmt = $database->prepare($sql);
-	$stmt->execute();
-	$groupArray = $stmt->fetchAll(PDO::FETCH_ASSOC);
-	print_r($groupArray);
+	$sql= "DELETE TOP(1) FROM groupmember WHERE groupID = '352' AND userID ='872'"; 
+	$database->exec($sql);
+	header('Location: loginPage.php');
 ?>
