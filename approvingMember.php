@@ -10,5 +10,5 @@
 		changePendingToZero($groupID,$username);
 	}
 
-	header('Location: https://cleequetest.herokuapp.com/addmember.php?groupNameSelected='.$groupID.'&submit=Go%21');
+	header('Location: https://cleeque.herokuapp.com/addmember.php?groupNameSelected='.$groupID.'&submit=Go%21');
 ?>
